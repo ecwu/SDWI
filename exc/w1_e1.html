@@ -29,6 +29,7 @@ body{
     padding-left: 0px;
     padding-top: 20px;
     padding-bottom: 50px;
+    /*must have padding-top & padding-bottom to align the text*/
 }
 
 .main{
@@ -37,28 +38,29 @@ body{
 	padding: 5px;
 }
 
+#left{
+	width: 20%;
+	/*20% of Container*/
+	float:left;
+	/*taken element from the normal flow and placed along the left of its div*/
+}
+
 .link{
 	font-size: 50px;
 }
 
-#left{
-	width: 20%;
-	float:left;
-	height: 400px;
-}
-
 #middle{
 	width:60%;
+	/*60% of Container*/
 	float:left;
-	height: 400px;
 	font-size: 20px;
 	text-align: left;
 }
 
 #right{
 	width: 20%;
+	/*20% of Container*/
 	float:left;
-	height: 400px;
 }
 
 .picture{
@@ -81,22 +83,22 @@ body{
 
 		<div class="header">
 			<h1 class="heading">CST</h1>
-		</div>
+		</div><!-- End of header -->
 
 		<div class="main">
 
 			<div id="left">
 				<a class="link" href="#">Student</a><br/>
 				<a class="link" href="#">Teacher</a>
-			</div>
+			</div><!-- End of left div -->
 
 			<div id="middle">
 				This programme aims to prepare students for a career in computer science or information-technology related areas. Students will be equipped to work in industry, business etc., or to pursue post-graduate study in China or abroad. Graduates will have developed learning skills and have the confidence to meet the challenges in the rapidly changing world of information technology. By studying this programme, the students are enabled to benefit from a broad-based education as they pursue a technology education with a specialization in computer science. Accordingly, students will be required to study a range of general education, information technology courses to achieve a balanced literal arts education. This is consistent with UIC’s mission of providing its students with a whole person education that prepares them for lifelong learning.
-			</div>
+			</div><!-- End of middle div -->
 
 			<div id="right">
 				<img class="picture" src="lanFlower.jpg"/>
-			</div>
+			</div><!-- End of right div -->
 
 		</div><!-- End of main -->
 
