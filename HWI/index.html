@@ -5,18 +5,25 @@
 
 <head>
 	<title>Zhenghao(Jack) Wu | SDWI 2017</title>
-	<!-- Bootstrap external CSS -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<!-- Internal Css -->
+	<!-- Internal css -->
 	<style type="text/css">
-		body{
-			margin: 
+		.container {
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			padding-right: 15px;
+			padding-left: 15px;
 		}
 		.floatright{
 			float:right;
 		}
+			/*taken element from the normal flow and placed along the left of its div*/
 		.headbar{
-			padding: 2rem;
+			padding: 2em 0em 2em 0em;
+			/*responsive padding (top & bottom)*/
+		}
+		.img_width{
+			max-width: 100%;
 		}
 	</style>
 </head>
@@ -31,7 +38,17 @@
 					<button type="button" class="btn btn-info floatright" disabled="True">Info</button>
 				</div>
 			</div>
-		</div><!-- headbar -->
+		</div><!-- End of headbar -->
+		<div class="main">
+			<div class="row">
+				<div class="col-2">
+					<img src="IMG_25946.jpg" class="rounded-circle img_width" />
+				</div><!-- left column -->
+				<div class="col-10">
+					b
+				</div><!-- right column -->
+			</div>
+		</div><!-- End of main -->
 	</div><!-- End of main container -->
 </body>
 </html>
