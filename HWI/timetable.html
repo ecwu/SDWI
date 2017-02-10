@@ -1,228 +1,246 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title></title>
+<!--	 <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+	<style type="text/css">
+		td{
+			width: 230px;
+			height: 60px;
+		}
+		.outtimetable{
+			border-right: 1px solid #000000;
+			border-bottom: 1px solid #000000;
+		}
+		.intimetable{
+			border-left: 1px solid #000000;
+			border-top: 1px solid #000000;
+		}
+		.timetable_noon{
+			height: auto;
+			background-color: #000000;
+		}
+	</style>
 </head>
 <body>
 
 <div>
-    <table cellspacing="0" class="table-sm table-bordered table-hover">
-        <tbody><tr>
-            <th>Time</th>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
-        </tr>
-        <tr>
-            <th>8:00 - 8:50</th>
-            <td>
-            Introduction to World Ecological Problems and Man<br>
-            T502<br>
-            </td>
-            <td>
-            English II (8)<br>
-            T403/T604/T203/T302/T303/T404<br>
-            </td>
-            <td>
-            Emotional Intelligence (2)<br>
-            T104/T204/T304/T405/T504/T505<br>    
-            </td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>9:00 - 9:50</th>
-            <td>
-            Introduction to World Ecological Problems and Man<br>
-            T502<br>
-            </td>
-            <td>
-            English II (8)<br>
-            T403/T604/T203/T302/T303/T404<br>
-            </td>
-            <td>
-            Emotional Intelligence (2)<br>
-            T104/T204/T304/T405/T504/T505<br>
-            </td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>10:00 - 10:50</th>
-            <td>
-            Introduction to World Ecological Problems and Man<br>
-            T502<br>
-            </td>
-            <td>
-            English II (8)<br>
-            T403/T604/T203/T302/T303/T404<br>
-            </td>
-            <td>
-            Emotional Intelligence (2)<br>
-            T104/T204/T304/T405/T504/T505<br>
-            </td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>11:00 - 11:50</th>
-            <td>
-            Introduction to World Ecological Problems and Man<br>
-            T502<br>
-            </td>
-            <td>
-            English II (8)<br>
-            T403/T604/T203/T302/T303/T404<br>
-            </td>
-            <td>
-            Emotional Intelligence (2)<br>
-            T104/T204/T304/T405/T504/T505<br>
-            </td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>12:00 - 12:50</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>13:00 - 13:50</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-            Chinese Thought through the Ages (20)<br>
-            T603<br>
-            </td>
-            <td>                        
-            Speaking of Statistics (8)<br>
-            T405<br>
-            </td>
-        </tr>
-        <tr>
-            <th>14:00 - 14:50</th>
-            
-            <td>
-            Business and Society (7)<br>
-            T101<br>
-            </td>
-            <td></td>
-            <td></td>
-            <td>
-            Chinese Thought through the Ages (20)<br>
-            T603<br>
-            </td>
-            <td>                        
-            Speaking of Statistics (8)<br>
-            T405<br>
-            </td>
-        </tr>
-        <tr>
-            <th>15:00 - 15:50</th>
-            <td>
-            Business and Society (7)<br>
-            T101<br>
-            </td>
-            <td></td>
-            <td>
-            Tennis (3)<br>
-            P. E. Place<br>
-            </td>
-            <td>
-            Chinese Thought through the Ages (20)<br>
-            T603<br>
-            </td>
-            <td>
-            Speaking of Statistics (8)<br>
-            T405<br>
-            </td>
-        </tr>
-        <tr>
-            <th>16:00 - 16:50</th>
-            <td>
-            Business and Society (7)<br>
-            T101<br>
-            </td>
-            <td></td>
-            <td>
-            Tennis (3)<br>
-            P. E. Place<br>
-            </td>
-            <td>
-            Chinese Thought through the Ages (20)<br>
-            T603<br>
-            </td>
-            <td>
-            Speaking of Statistics (8)<br>
-            T405<br>
-            </td>
-        </tr>
-        <tr>
-            <th>17:00 - 17:50</th>
-            <td>
-            Business and Society (7)<br>
-            T101<br>
-            </td>
-            <td></td>
-            <td>
-            Tennis (3)<br>
-            P. E. Place<br>
-            </td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>18:00 - 18:50</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-            Software Development Workshop I (2)<br>
-            T202<br>
-            </td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>19:00 - 19:50</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-            Software Development Workshop I (2)<br>
-            T202<br>
-            </td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>20:00 - 20:50</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-            Software Development Workshop I (2)<br>
-            T202<br>
-            </td>
-            <td></td>
-        </tr>
-        <tr>
-            <th>21:00 - 21:50</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>       
-            Software Development Workshop I (2)<br>
-            T202<br>
-            </td>
-            <td></td>
-        </tr></tbody>
-    </table>
+	<table cellspacing="0" class="outtimetable">
+		<tbody><tr>
+			<th class="intimetable">Time</th>
+			<th class="intimetable">Mon</th>
+			<th class="intimetable">Tue</th>
+			<th class="intimetable">Wed</th>
+			<th class="intimetable">Thu</th>
+			<th class="intimetable">Fri</th>
+		</tr>
+		<tr>
+			<th class="intimetable">8:00 - 8:50</th>
+			<td class="intimetable">
+			Introduction to World Ecological Problems and Man<br>
+			T502<br>
+			</td>
+			<td class="intimetable">
+			English II<br>
+			T604<br>
+			</td>
+			<td class="intimetable">
+			Emotional Intelligence<br>
+			T401<br>
+			</td>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+		</tr>
+		<tr>
+			<th class="intimetable">9:00 - 9:50</th>
+			<td class="intimetable">
+			Introduction to World Ecological Problems and Man<br>
+			T502<br>
+			</td>
+			<td class="intimetable">
+			English II<br>
+			T604<br>
+			</td>
+			<td class="intimetable">
+			Emotional Intelligence<br>
+			T401<br>
+			</td>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+		</tr>
+		<tr>
+			<th class="intimetable">10:00 - 10:50</th>
+			<td class="intimetable">
+			Introduction to World Ecological Problems and Man<br>
+			T502<br>
+			</td>
+			<td class="intimetable">
+			English II<br>
+			T604<br>
+			</td>
+			<td class="intimetable">
+			Emotional Intelligence<br>
+			T401<br>
+			</td>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+		</tr>
+		<tr>
+			<th class="intimetable">11:00 - 11:50</th>
+			<td class="intimetable">
+			Introduction to World Ecological Problems and Man<br>
+			T502<br>
+			</td>
+			<td class="intimetable">
+			English II<br>
+			T604<br>
+			</td>
+			<td class="intimetable">
+			Emotional Intelligence<br>
+			T401<br>
+			</td>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+		</tr>
+		<tr>
+			<th class="intimetable">12:00 - 12:50</th>
+			<td class="intimetable timetable_noon"></td>
+			<td class="intimetable timetable_noon"></td>
+			<td class="intimetable timetable_noon"></td>
+			<td class="intimetable timetable_noon"></td>
+			<td class="intimetable timetable_noon"></td>
+		</tr>
+		<tr>
+			<th class="intimetable">13:00 - 13:50</th>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+			<td class="intimetable">
+			Chinese Thought through the Ages<br>
+			T603<br>
+			</td>
+			<td class="intimetable">
+			Speaking of Statistics<br>
+			T405<br>
+			</td>
+		</tr>
+		<tr>
+			<th class="intimetable">14:00 - 14:50</th>
+			
+			<td class="intimetable">
+			Business and Society<br>
+			T101<br>
+			</td>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+			<td class="intimetable">
+			Chinese Thought through the Ages<br>
+			T603<br>
+			</td>
+			<td class="intimetable">
+			Speaking of Statistics<br>
+			T405<br>
+			</td>
+		</tr>
+		<tr>
+			<th class="intimetable">15:00 - 15:50</th>
+			<td class="intimetable">
+			Business and Society<br>
+			T101<br>
+			</td>
+			<td class="intimetable"></td>
+			<td class="intimetable">
+			Tennis<br>
+			P. E. Place<br>
+			</td>
+			<td class="intimetable">
+			Chinese Thought through the Ages<br>
+			T603<br>
+			</td>
+			<td class="intimetable">
+			Speaking of Statistics<br>
+			T405<br>
+			</td>
+		</tr>
+		<tr>
+			<th class="intimetable">16:00 - 16:50</th>
+			<td class="intimetable">
+			Business and Society<br>
+			T101<br>
+			</td>
+			<td class="intimetable"></td>
+			<td class="intimetable">
+			Tennis<br>
+			P. E. Place<br>
+			</td>
+			<td class="intimetable">
+			Chinese Thought through the Ages<br>
+			T603<br>
+			</td>
+			<td class="intimetable">
+			Speaking of Statistics<br>
+			T405<br>
+			</td>
+		</tr>
+		<tr>
+			<th class="intimetable">17:00 - 17:50</th>
+			<td class="intimetable">
+			Business and Society<br>
+			T101<br>
+			</td>
+			<td class="intimetable"></td>
+			<td class="intimetable">
+			Tennis<br>
+			P. E. Place<br>
+			</td>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+		</tr>
+		<tr>
+			<th class="intimetable">18:00 - 18:50</th>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+			<td class="intimetable">
+			Software Development Workshop I<br>
+			T202<br>
+			</td>
+			<td class="intimetable"></td>
+		</tr>
+		<tr>
+			<th class="intimetable">19:00 - 19:50</th>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+			<td class="intimetable">
+			Software Development Workshop I<br>
+			T202<br>
+			</td>
+			<td class="intimetable"></td>
+		</tr>
+		<tr>
+			<th class="intimetable">20:00 - 20:50</th>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+			<td class="intimetable">
+			Software Development Workshop I<br>
+			T202<br>
+			</td>
+			<td class="intimetable"></td>
+		</tr>
+		<tr>
+			<th class="intimetable">21:00 - 21:50</th>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+			<td class="intimetable"></td>
+			<td class="intimetable">	   
+			Software Development Workshop I<br>
+			T202<br>
+			</td>
+			<td class="intimetable"></td>
+		</tr></tbody>
+	</table>
 </div>
 </body>
 </html>
