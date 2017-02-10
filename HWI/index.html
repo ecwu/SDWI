@@ -24,6 +24,14 @@
 			padding-left: 20%;
 		}
 
+		@media(max-width: 767px){
+		/*change padding if screen width less than 767px*/
+		.container{
+		padding-right:20px;
+		padding-left:20px;
+		}
+		}
+
 		.headbar{
 			padding: 1em 0em 1em 0em;
 		/*responsive padding (top & bottom)*/
@@ -42,7 +50,10 @@
 		}
 		.imgstyle{
 			max-width: 80%;
-			border-radius: 10%;
+			border-radius: 50%;
+		}
+		.lefttextbox{
+			max-width: 80%;
 		}
 		.graytext{
 			color: #888888;
@@ -63,18 +74,20 @@
 		<div class="headbar">
 			<div>
 				<div>
-					<h1>My Own Website</h1>
+					<h1>My Website | <span class="graytext">Jack Wu</span></h1>
 				</div>
 			</div>
 		</div><!-- End of headbar -->
 		<div>
 			<div class="mainleftcol">
 				<img class="imgstyle" src="avatar.jpg" />
-				<h3>Jack Wu (Zhenghao)</h3>
-				<p class="graytext stuid">l630003054</p>
-				<p class="graytext topborder">
-				I am Computer Science & Technology Student
-				</p>
+				<div class="lefttextbox">
+					<h3>Jack Wu (Zhenghao)</h3>
+					<p class="graytext stuid">l630003054</p>
+					<p class="graytext topborder">
+					I am Computer Science & Technology Student at <a href="http://uic.edu.hk">UIC</a>.
+					</p>
+				</div>
 			</div><!-- left column -->
 			<div class="mainrightcol">
 				test
