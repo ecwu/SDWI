@@ -34,6 +34,10 @@
 		/*responsive padding (top & bottom)*/
 		}
 		
+		.twocolmain{
+			height: auto;
+		}
+
 		/*col style for main*/
 		.mainleftcol{
 			width: 30%;
@@ -59,8 +63,7 @@
 				border-top: 1px #e5e5e5 solid;
 			/*a solid border style*/
 				padding-top: 16px;
-				padding-bottom: 16px;
-			/*add a padding gap(top & bottom) for left col*/
+			/*add a padding gap(top) for left col*/
 			}
 
 		.mainrightcol{
@@ -70,30 +73,30 @@
 		}
 
 		/*Style for timetable*/
-			td{
-				width: 230px;
-				height: 60px;
-			}
-			.outtimetable{
-				border-right: 1px solid #333333;
-				border-bottom: 1px solid #333333;
-			}
-			.intimetable{
-				border-left: 1px solid #333333;
-				border-top: 1px solid #333333;
-			}
-			.timetable_noon{
-				height: auto;
-				background-color: #eeeeee;
-			}
-			.timetable_bright{
-				background-color: #eeeeee;
-			}
-			.timetable_dark{
-				background-color: #cccccc;
-			}
+		.timetable{
+			width: 100%;
+		}
+		.timetabletd{
+			width: 230px;
+			height: 60px;
+		}
+		.outtimetable{
+			border-right: 1px solid #333333;
+			border-bottom: 1px solid #333333;
+		}
+		.intimetable{
+			border-left: 1px solid #333333;
+			border-top: 1px solid #333333;
+		}
+		.timetable_bright{
+			background-color: #eeeeee;
+		}
+		.timetable_dark{
+			background-color: #cccccc;
+		}
 
 	</style>
+	<!-- End of Internal css -->
 </head>
 <body>
 	<div class="container">
@@ -104,90 +107,98 @@
 				</div>
 			</div>
 		</div><!-- End of headbar -->
-		<div>
+		<div class="twocolmain">
 			<div class="mainleftcol">
 				<img class="avatarstyle" src="avatar.jpg" />
 				<div class="lefttextbox">
 					<h3>Jack Wu (Zhenghao)</h3>
 					<p class="graytext stuid">l630003054</p>
 					<p class="graytext topborder">
-					I am Computer Science & Technology Student at <a href="http://uic.edu.hk">UIC</a>.
+					I am a Computer Science & Technology Student at <a href="http://uic.edu.hk">UIC</a>.
 					</p>
+					<table class="topborder">
+						<tr>
+							<td>Native Place:</td>
+							<td>Guangzhou</td>
+						</tr>
+						<tr>
+							<td>Hobby:</td>
+							<td>Music / Coding</td>
+						</tr>
+						<tr>
+							<td>Language:</td>
+							<td>Python/PHP</td>
+						</tr>
+					</table>
 				</div>
 			</div><!-- left column -->
 			<div class="mainrightcol">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit et risus in mattis. Pellentesque molestie augue vitae mi mattis viverra. Suspendisse bibendum maximus urna, a gravida elit placerat nec. Suspendisse enim massa, gravida vitae gravida in, iaculis blandit diam. Aenean lacus felis, blandit eget nulla ac, congue mattis felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis interdum sit amet orci ut fringilla. Nullam egestas at risus vitae lacinia. Sed mi nibh, posuere sed vestibulum sit amet, fringilla quis sapien. Fusce ut ligula pretium, placerat nulla in, gravida tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit et risus in mattis. Pellentesque molestie augue vitae mi mattis viverra. Suspendisse bibendum maximus urna, a gravida elit placerat nec. Suspendisse enim massa, gravida vitae gravida in, iaculis blandit diam. Aenean lacus felis, blandit eget nulla ac, congue mattis felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis interdum sit amet orci ut fringilla. Nullam egestas at risus vitae lacinia. Sed mi nibh, posuere sed vestibulum sit amet, fringilla quis sapien. Fusce ut ligula pretium, placerat nulla in, gravida tortor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit et risus in mattis. Pellentesque molestie augue vitae mi mattis viverra. Suspendisse bibendum maximus urna, a gravida elit placerat nec. Suspendisse enim massa, gravida vitae gravida in, iaculis blandit diam. Aenean lacus felis, blandit eget nulla ac, congue mattis felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis interdum sit amet orci ut fringilla. Nullam egestas at risus vitae lacinia. Sed mi nibh, posuere sed vestibulum sit amet, fringilla quis sapien. Fusce ut ligula pretium, placerat nulla in, gravida tortor.
 			</div><!-- right column -->
-			<div >
-				<table cellspacing="0" class="outtimetable">
-					<tbody>
-						<tr>
-							<th class="intimetable">Time</th>
-							<th class="intimetable">Mon</th>
-							<th class="intimetable">Tue</th>
-							<th class="intimetable">Wed</th>
-							<th class="intimetable">Thu</th>
-							<th class="intimetable">Fri</th>
-						</tr>
-						<tr class="timetable_dark">
-							<th class="intimetable">Morning</th>
-							<td class="intimetable">
-							Introduction to World Ecological Problems and Man<br>
-							T502<br>
-							</td>
-							<td class="intimetable">
-							English II<br>
-							T604<br>
-							</td>
-							<td class="intimetable">
-							Emotional Intelligence<br>
-							T401<br>
-							</td>
-							<td class="intimetable"></td>
-							<td class="intimetable"></td>
-						</tr>
-						<tr colspan="6" class="timetable_noon">
-							<th class="intimetable"></th>
-							<td class="intimetable"></td>
-							<td class="intimetable"></td>
-							<td class="intimetable"></td>
-							<td class="intimetable"></td>
-							<td class="intimetable"></td>
-						</tr>
-						<tr class="timetable_dark">
-							<th class="intimetable">Afternoon</th>
-							<td class="intimetable">
-							Business and Society<br>
-							T101<br>
-							</td>
-							<td class="intimetable"></td>
-							<td class="intimetable">
-							Tennis<br>
-							P. E. Place<br>
-							</td>
-							<td class="intimetable">
-							Chinese Thought through the Ages<br>
-							T603<br>
-							</td>
-							<td class="intimetable">
-							Speaking of Statistics<br>
-							T405<br>
-							</td>
-						</tr>
-						<tr class="timetable_bright">
-							<th class="intimetable">Evening</th>
-							<td class="intimetable"></td>
-							<td class="intimetable"></td>
-							<td class="intimetable"></td>
-							<td class="intimetable">
-							Software Development Workshop I<br>
-							T202<br>
-							</td>
-							<td class="intimetable"></td>
-						</tr>
-					</tbody>
-				</table>
-			</div><!-- End of my timetable -->
 		</div><!-- End of main -->
+		<div class="timetable">
+			<table cellspacing="0" class="outtimetable">
+				<h1>My timetable</h1>
+				<tbody>
+					<tr>
+						<th class="intimetable timetabletd">Time</th>
+						<th class="intimetable timetabletd">Mon</th>
+						<th class="intimetable timetabletd">Tue</th>
+						<th class="intimetable timetabletd">Wed</th>
+						<th class="intimetable timetabletd">Thu</th>
+						<th class="intimetable timetabletd">Fri</th>
+					</tr>
+					<tr class="timetable_dark">
+						<th class="intimetable timetabletd">Morning</th>
+						<td class="intimetable timetabletd">
+						Introduction to World Ecological Problems and Man<br>
+						T502<br>
+						</td>
+						<td class="intimetable timetabletd">
+						English II<br>
+						T604<br>
+						</td>
+						<td class="intimetable timetabletd">
+						Emotional Intelligence<br>
+						T401<br>
+						</td>
+						<td class="intimetable timetabletd"></td>
+						<td class="intimetable timetabletd"></td>
+					</tr>
+					<tr class="timetable_bright">
+						<th class="intimetable timetabletd">Afternoon</th>
+						<td class="intimetable timetabletd">
+						Business and Society<br>
+						T101<br>
+						</td>
+						<td class="intimetable timetabletd"></td>
+						<td class="intimetable timetabletd">
+						Tennis<br>
+						P. E. Place<br>
+						</td>
+						<td class="intimetable timetabletd">
+						Chinese Thought through the Ages<br>
+						T603<br>
+						</td>
+						<td class="intimetable timetabletd">
+						Speaking of Statistics<br>
+						T405<br>
+						</td>
+					</tr>
+					<tr class="timetable_dark">
+						<th class="intimetable timetabletd">Evening</th>
+						<td class="intimetable timetabletd"></td>
+						<td class="intimetable timetabletd"></td>
+						<td class="intimetable timetabletd"></td>
+						<td class="intimetable timetabletd">
+						Software Development Workshop I<br>
+						T202<br>
+						</td>
+						<td class="intimetable timetabletd"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- End of my timetable -->
 	</div><!-- End of main container -->
 </body>
 </html>
