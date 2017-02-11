@@ -11,8 +11,10 @@
 	/*global style*/
 		body {
 			font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+			/*Some Sans-Serif fonts for display */
 			font-size: 1em;
 			line-height: 1.5;
+			/*set text line height to 1.5 times as normal*/
 		}
 		.container {
 			position: relative;
@@ -71,6 +73,10 @@
 			float:right;
 		/*taken element from the normal flow and placed along the right of its div*/
 		}
+			.undotli{
+				list-style-type:none;
+			}
+			/*delete unorder list decoration dot*/
 
 		/*Style for timetable*/
 		.timetable{
@@ -130,7 +136,7 @@
 					<h3>Jack Wu (Zhenghao)</h3>
 					<p class="graytext stuid">l630003054</p>
 					<p class="graytext topborder">
-					I am a Computer Science & Technology Student at <a href="http://uic.edu.hk">UIC</a>.
+					CST(Computer Science &amp; Technology) Student at <a href="http://uic.edu.hk">UIC</a>.
 					</p>
 					<table class="topborder">
 						<tr>
@@ -153,12 +159,18 @@
 			Hello There! My name is Wu Zhenghao(Jack), and I am studing Computer Science & Technology at Beijing Normal University and Hong Kong Baptist University United International College(UIC)
 			<h2>My Ideal Roles</h2>
 			<ul>
-				<li>Web Designer</li>
-				<li><del>Documentation</del></li>
-				<li>Developer</li>
-				<li><del>Tester</del></li>
+				<li class="undotli"><input type="checkbox" checked="True" disabled="True" />Web Designer</li>
+				<li class="undotli"><input type="checkbox" disabled="True" />Documentation</li>
+				<li class="undotli"><input type="checkbox" checked="True" disabled="True" />Developer</li>
+				<li class="undotli"><input type="checkbox" disabled="True" />Tester</li>
+				<!-- input tag for a checkbox style -->
+				<!-- user can modify the checkboxs because 'disabled="True"' -->
 			</ul>
 			<h2>Things I expect from Workshop I</h2>
+			I think, I am good Web Designer and Developer
+			<h2>My favorite websites</h2>
+			I think, I am good Web Designer and Developer
+			<h2>My favorite websites</h2>
 			I think, I am good Web Designer and Developer
 			<h2>My favorite websites</h2>
 			I think, I am good Web Designer and Developer
