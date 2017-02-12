@@ -121,5 +121,6 @@ padding-left:20px;
 }
 	#clp{
 		float: right;
+		display:inline;
 		font-family: "Garamond", "Times new roman", serif;
 	}
