@@ -40,7 +40,7 @@ padding-left:20px;
 	width: 30%;
 	float:left;/*taken element from the normal flow and placed along the left of its div*/
 }
-	.avatarstyle{
+	.avatar{
 		max-width: 80%;
 		border-radius: 30% 30% 30% 0%;
 	}/*let the avatar display in abnormity circle*/
