@@ -110,7 +110,7 @@ padding-left:20px;
 .timetable_dark{
 	background-color: #DFE3EE;
 }
-.footer {/*footer style*/
+.footerbar {/*footer style*/
 	padding-right: 20%;
 	padding-left: 20%;/*normal padding is 20% of the website window(screen width more than 700px)*/
 	position: relative;/*stick it to the bottom*/
