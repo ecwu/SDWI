@@ -50,6 +50,9 @@ padding-left:20px;
 	.graytext{
 		color: #888888;
 	}/*a graytext style 53.3% gray*/
+	.bluetext{
+		color: #146EB4;
+	}/*a blue text color for heading*/
 	.stuid{
 		margin-top: 0px;
 	}
@@ -86,7 +89,7 @@ padding-left:20px;
 	padding: 0px 3px 1px 3px;/*place box*/
 	border-radius: 5px;/*a 5px rounded rectangle*/
 	color: #000000;
-	border-color: #34A853;
+	border-color: #FF9900;
 }/*1px green border for Timetable time*/
 .timetable_title{
 	background-color: #3B5998;
