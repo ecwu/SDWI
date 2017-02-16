@@ -1,13 +1,19 @@
+.container{
+    padding-left: 25%;
+    padding-right: 25%;
+}
 .joinbox{
 
 }
 
 .left{
-
+    float: left;
+    margin: 0px 20px 0px 20px;
 }
 
 .right{
-
+    float: right;
+    margin: 0px 20px 0px 20px;
 }
 
 .currentskill{
@@ -20,4 +26,12 @@
 
 .postion{
 
+}
+
+.postionleft{
+    float: left;
+}
+
+.postionright{
+    float: left;
 }
