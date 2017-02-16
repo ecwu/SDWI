@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Input Box | Jack Wu</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <div class="joinbox">
+        <p class="joinboxtitle">Please Fill in the form below to submit</p>
+        <div class="left">
+            <p>User Name:<input type="text" id="username" /></p>
+            <div class="currentskill">
+                <form>
+                    <fieldset>
+                        <legend>Your Current Skills</legend>
+                    <input type="checkbox" name="skills" />Web Design<br />
+                    <input type="checkbox" name="skills" />Java<br />
+                    <input type="checkbox" name="skills" />Database<br />
+                    </fieldset>
+                </form><!-- End of Skills Checkbox box-->
+            </div>
+            <div class="cityexpect">.
+                <form>
+                    <fieldset>
+                        <legend>City Expected</legend>
+                    <input type="radio" value="Beijing" />Beijing<br />
+                    <input type="radio" value="Shenzhen" />Shenzhen<br />
+                    <input type="radio" value="Zhuhai" />Zhuhai<br />
+                    </fieldset>
+                </form>
+            </div><!-- End of City Expected radio box-->
+        </div><!-- End of Left div-->
+        <div class="right">
+            <div class="postion">
+                <p>Position:</p>
+                <select name="position">
+                    <option value="Officer">Officer</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Engineer">Engineer</option>
+                    <option value="Architect">Architect</option>
+                </select>
+            </div>
+            <div class="postionleft">
+                <p>Recent Jobs</p>
+                <select multiple="multiple" size="5">
+                    <option value="Assistant">Assistant</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Customer service">Customer service</option>
+                    <option value="Manager">Manager</option>
+                    <option value="CEO">CEO</option>
+                </select>
+            </div>
+            <div class="postionright">
+                <p>Work Experience:</p>
+                <textarea rows="8" cols="20" />
+            </div>
+            <div class="upload">
+                Upload a file: <input type="file" />
+            </div>
+        </div>
+        <div class="btn">
+            <input type="button" value="Reset" />
+            <input type="button" value="Submit" onclick="ainfo()"/>
+            <button onclick="var el = document.getElementsByTagName('select')[0]; alert(getSelectValues(el));">
+                Show selected values
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

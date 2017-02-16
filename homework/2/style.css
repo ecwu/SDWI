@@ -1,6 +1,10 @@
+body{
+	background-color:#800080; 
+}
 .container{
 	width: 700px;
 	margin: 0 auto;
+	background: #FFFFFF;
 }
 .joinbox{
 	border: 1px solid 
@@ -8,7 +12,10 @@
 
 .joinboxtitle{
 	text-align: center;
-
+	background-color: #00509f;;
+	margin-top:0px;
+	color: #ffffff;
+	padding: 5px;
 }
 
 .left{
@@ -50,5 +57,5 @@
 .btn{
 	clear: both;
 	text-align: center;
-	padding: 10px;
+	padding: 30px 0px 20px 0px;
 }
