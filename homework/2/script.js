@@ -1,0 +1,3 @@
+function mulitjobs(){
+	document.getElement
+}

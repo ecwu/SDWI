@@ -10,7 +10,7 @@
 <body>
 <div class="container">
     <div class="joinbox">
-        <p>Please Fill in the form below to submit</p>
+        <p class="joinboxtitle">Please Fill in the form below to submit</p>
         <div class="left">
             <p>User Name:<input type="text" /></p>
             <div class="currentskill">
@@ -48,17 +48,26 @@
                 <p>Recent Jobs</p>
                 <select multiple="multiple" size="5">
                     <option value="Assistant">Assistant</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Customer service">Customer service</option>
+                    <option value="Manager">Manager</option>
+                    <option value="CEO">CEO</option>
                 </select>
             </div>
-            <div class="postionrigth">
+            <div class="postionright">
                 <p>Work Experience:</p>
                 <textarea rows="8" cols="20" />
             </div>
             <div class="upload">
-                Upload a file:<input type="file" />
+                Upload a file: <input type="file" />
             </div>
+        </div>
+        <div class="btn">
+            <input type="button" value="Reset" />
+            <input type="button" value="Submit" />
         </div>
     </div>
 </div>
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html>
