@@ -62,6 +62,18 @@ function ainfo(){
 	var select = document.getElementById('text').value;
 		return select;
 	}
+
+	function file(){
+	var result;
+	var file = document.getElementById('file'); 
+        if (file.value == ""){
+        	result = "no";
+        }
+        else {
+        	result = "yes";
+        }
+        return result;
+	}
 /*alert("User Name: " + userName);*/
-alert("Name: " + userName + "\n" + "Current Skills: " + skills() + "\n" + "City Expected: " + ce() + "\n" + "Position: " + position() + "\n" + "Recent Jobs: " + jobs() + "\n" + "Work Experience: " + text());
+alert("Name: " + userName + "\n" + "Current Skills: " + skills() + "\n" + "City Expected: " + ce() + "\n" + "Position: " + position() + "\n" + "Recent Jobs: " + jobs() + "\n" + "Work Experience: " + text() + "\n" + "Upload file: " + file());
 }
