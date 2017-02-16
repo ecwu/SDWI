@@ -21,11 +21,12 @@ function ainfo(){
 
 	function ce(){
 	var select = document.getElementById("city");
-	var option = select.value;
+	var result = [];
+	var option ;
 		for (var i = 0, iLen = select.length; i<iLen; i++){
 			option = select[i];
-			if (option.selected){
-				jobresult.push(" " + option.value);
+			if (option.checked){
+				result.push(" " + option.value);
 			}
 		}
 		return result;
@@ -64,37 +65,3 @@ function ainfo(){
 /*alert("User Name: " + userName);*/
 alert("Array: " + ce());
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*function jobs(select) {
-	var result = [];
-	var options = select && select.options;
-	var opt;
-	for (var i=0, iLen=options.length; i<iLen; i++) {
-		opt = options[i];
-		if (opt.selected) {
-			result.push(opt.value || opt.text);
-		}
-	}
-	return result;
-}*/

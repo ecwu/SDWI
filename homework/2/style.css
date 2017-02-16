@@ -3,7 +3,7 @@ body{
 }
 .container{
 	width: 700px;
-	margin: 0 auto;
+	margin: 100px auto 0 auto;
 	background: #FFFFFF;
 }
 .joinbox{
