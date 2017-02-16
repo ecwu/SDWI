@@ -4,9 +4,40 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>Input Box</title>
+    <title>Input Box | Jack Wu</title>
 </head>
 <body>
-
+    <div class="joinbox">
+        <div class="left">
+            <p>User Name:<input type="text"></input></p>
+            <div class="currentskill">
+                <p>Your Current Skills</p>
+                <form>
+                    <input type="checkbox" name="skills" />Web Design<br />
+                    <input type="checkbox" name="skills" />Java<br />
+                    <input type="checkbox" name="skills" />Database<br />
+                </form><!-- End of Skills Checkbox box-->
+            </div>
+            <div class="cityexpect">
+                <p>City Expected</p>
+                <form>
+                    <input type="radio" name="citys" />Beijing<br />
+                    <input type="radio" name="citys" />Shenzhen<br />
+                    <input type="radio" name="citys" />Zhuhai<br />
+                </form>
+            </div><!-- End of City Expected radio box-->
+        </div><!-- End of Left div-->
+        <div class="right">
+            <div class="postion">
+                <p>Position:</p>
+                <select name="position">
+                    <option value="Officer">Officer</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Engineer">Engineer</option>
+                    <option value="Architect">Architect</option>
+                </select>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
