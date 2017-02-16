@@ -45,7 +45,7 @@ function ainfo(){
 		return result;
 	}
 
-	function jobsdata(){
+	function jobs(){
 	var select = document.getElementById('multiple');
 	var result = [];
 	var option;
@@ -63,5 +63,5 @@ function ainfo(){
 		return select;
 	}
 /*alert("User Name: " + userName);*/
-alert("Array: " + ce());
+alert("Name: " + userName + "Current Skills: " + skills() + "City Expected: " + ce() + "Position: " + position() + "Recent Jobs: " + jobs() + "Work Experience:" + text());
 }
