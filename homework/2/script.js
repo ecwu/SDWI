@@ -2,27 +2,26 @@ function ainfo(){
 	var userName = document.getElementById("username").value;
 
 	function skills(){
-/*	var selecta = document.getElementById('skilla');
-	var selectb = document.getElementById('skillb')
-	var selectc = document.getElementById('skillc')*/
 	var selecta = document.getElementById('skilla');
-	var selecta = document.getElementById('skillb');
-	var selecta = document.getElementById('skillc');
+	var selectb = document.getElementById('skillb');
+	var selectc = document.getElementById('skillc');
 	var result = [];
 	var input;
-		for (var i = 1, iLen = select.length; i<iLen; i++){
-			input = select[i];
-			if (input.selected){
-				jobresult.push(" " + input.value);
+			if (selecta.checked){
+				result.push(" " + selecta.value);
 			}
-		}
+			if (selectb.checked){
+				result.push(" " + selectb.value);
+			}
+			if (selectc.checked){
+				result.push(" " + selectc.value);
+			}
 		return result; 
 	}
 
-	function jobsdata(){
-	var select = document.getElementById('multiple');
-	var result = [];
-	var option;
+	function ce(){
+	var select = document.getElementById("city");
+	var option = select.value;
 		for (var i = 0, iLen = select.length; i<iLen; i++){
 			option = select[i];
 			if (option.selected){
@@ -32,8 +31,38 @@ function ainfo(){
 		return result;
 	}
 
+	function position(){
+		var select = document.getElementById('position');
+		var result = [];
+		var option ;
+		for (var i = 0, iLen = select.length; i<iLen; i++){
+			option = select[i];
+			if (option.selected){
+				result.push(" " + option.value);
+			}
+		}
+		return result;
+	}
+
+	function jobsdata(){
+	var select = document.getElementById('multiple');
+	var result = [];
+	var option;
+		for (var i = 0, iLen = select.length; i<iLen; i++){
+			option = select[i];
+			if (option.selected){
+				result.push(" " + option.value);
+			}
+		}
+		return result;
+	}
+
+	function text(){
+	var select = document.getElementById('text').value;
+		return select;
+	}
 /*alert("User Name: " + userName);*/
-alert("Array: " + skills());
+alert("Array: " + ce());
 }
 
 
