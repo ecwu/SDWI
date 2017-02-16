@@ -77,3 +77,7 @@ function ainfo(){
 /*alert("User Name: " + userName);*/
 alert("Name: " + userName + "\n" + "Current Skills: " + skills() + "\n" + "City Expected: " + ce() + "\n" + "Position: " + position() + "\n" + "Recent Jobs: " + jobs() + "\n" + "Work Experience: " + text() + "\n" + "Upload file: " + file());
 }
+
+function reset(){
+	document.getElementById("form").reset();
+}

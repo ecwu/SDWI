@@ -6,29 +6,38 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Join Us | SDWI 2017</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 </head>
 <body>
-<form id=form>
+<form id=form class="form-inline">
     <div class="container">
         <div class="joinbox">
-            <p class="joinboxtitle">Please Fill in the form below to submit</p>
+            <h2>Please Fill in the form below to submit</h2>
             <div class="left">
-                <p>Name: <input type="text" id="username" /></p><br />
+                <label class="sr-only" for="inlineFormInput">Name</label>
+                <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="username" placeholder="Name:">
+
+                  <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                    <div class="input-group-addon">@</div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                  </div>
+
                 <div class="currentskill">
                     <fieldset id="skills">
                         <legend>Your Current Skills</legend>
-                    <input type="checkbox" id="skilla" value="Web Design" name="skills" />Web Design<br />
-                    <input type="checkbox" id="skillb" value="Java" name="skills" />Java<br />
-                    <input type="checkbox" id="skillc" value="Database" name="skills" />Database<br />
+                    <input type="checkbox" id="skilla" value="Web Design" name="skills" />Web Design
+                    <input type="checkbox" id="skillb" value="Java" name="skills" />Java
+                    <input type="checkbox" id="skillc" value="Database" name="skills" />Database
                     </fieldset>
                 </div>
                 <br />
                 <div id="city">
                     <fieldset>
                         <legend>City Expected</legend>
-                        <input type="radio" value="Beijing" name="city" />Beijing<br />
-                        <input type="radio" value="Shenzhen" name="city" />Shenzhen<br />
-                        <input type="radio" value="Zhuhai" name="city" />Zhuhai<br />
+                        <input type="radio" value="Beijing" name="city" />Beijing
+                        <input type="radio" value="Shenzhen" name="city" />Shenzhen
+                        <input type="radio" value="Zhuhai" name="city" />Zhuhai
                     </fieldset>
                 </div><!-- End of City Expected radio box-->
             </div><!-- End of Left div-->
@@ -69,5 +78,7 @@
     </div>
 </form>
 </body>
+<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/script.js"></script>
+<script src="js/bootstrap.js"></script>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join us | SDWI2017</title>
+  <link href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Please fill in the form below to submit.</h2>
+  <form id=form>
+    <p>Name &amp; Email</p>
+      <div class="row">
+          <div class="col">
+            <input class="form-control" type="text" id="username" placeholder="Name">
+          </div>
+          <div class="col">
+            <input class="form-control" type="Email" id="username" placeholder="Email">
+          </div>
+      </div>
+    <p>Your Current Skills</p>
+      <div class="row">
+          <div class="col">
+              <label class="form-check-label">
+                <input type="checkbox" id="skilla" value="Web Design" name="skills">Web Design
+              </label>
+              <label class="form-check-label">
+                <input type="checkbox" id="skillb" value="Java" name="skills">Java
+              </label>
+              <label class="form-check-label">
+                <input type="checkbox" id="skillc" value="Database" name="skills">Database
+              </label>
+          </div>
+          <div class="col" id="city">
+              <label class="form-check-label">
+                <input type="radio" value="Beijing" name="city">Beijing
+              </label>
+              <label class="form-check-label">
+                <input type="radio" value="Shenzhen" name="city">Shenzhen
+              </label>
+              <label class="form-check-label">
+                <input type="radio" value="Zhuhai" name="city">Zhuhai
+              </label>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+            <label class="custom-file">
+              <input type="file" id="file" class="custom-file-input">
+              <span class="custom-file-control"></span>
+            </label>
+          </div>
+      </div>
+
+      <div class="btn">
+          <input type="button" value="Reset" onclick="resetinfo()"/>
+          <input type="button" value="Submit" onclick="ainfo()"/>
+      </div>
+  </form>
+</div>
+
+</body>
+<script src="js/script.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.js"></script>
+</html>
