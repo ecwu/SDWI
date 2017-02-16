@@ -63,5 +63,5 @@ function ainfo(){
 		return select;
 	}
 /*alert("User Name: " + userName);*/
-alert("Name: " + userName + "Current Skills: " + skills() + "City Expected: " + ce() + "Position: " + position() + "Recent Jobs: " + jobs() + "Work Experience:" + text());
+alert("Name: " + userName + "\n" + "Current Skills: " + skills() + "\n" + "City Expected: " + ce() + "\n" + "Position: " + position() + "\n" + "Recent Jobs: " + jobs() + "\n" + "Work Experience: " + text());
 }

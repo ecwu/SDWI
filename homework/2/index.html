@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html
         PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <title>Join Us | Jack Wu</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Join Us | SDWI 2017</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 <form>
@@ -13,7 +13,7 @@
         <div class="joinbox">
             <p class="joinboxtitle">Please Fill in the form below to submit</p>
             <div class="left">
-                <p>Name: <input type="text" id="username" /></p>
+                <p>Name: <input type="text" id="username" /></p><br />
                 <div class="currentskill">
                     <fieldset id="skills">
                         <legend>Your Current Skills</legend>
@@ -23,14 +23,12 @@
                     </fieldset>
                 </div>
                 <br />
-                <div id="cityexpect">
+                <div id="city">
                     <fieldset>
                         <legend>City Expected</legend>
-                    <form id="city">
                         <input type="radio" value="Beijing" name="city" />Beijing<br />
                         <input type="radio" value="Shenzhen" name="city" />Shenzhen<br />
                         <input type="radio" value="Zhuhai" name="city" />Zhuhai<br />
-                    </form>
                     </fieldset>
                 </div><!-- End of City Expected radio box-->
             </div><!-- End of Left div-->
@@ -56,19 +54,20 @@
                 </div>
                 <div class="postionright">
                     <p>Work Experience:</p>
-                    <textarea rows="8" cols="20" id="text" />
+                    <textarea rows="8" cols="20" id="text"></textarea>
                 </div>
+
                 <div class="upload">
-                    Upload a file: <input type="file" />
+                    <br />Upload a file: <input type="file" />
                 </div>
             </div>
             <div class="btn">
-                <input type="button" value="Reset" />
+                <input type="button" value="Reset" onclick="window.location.reload()"/>
                 <input type="button" value="Submit" onclick="ainfo()"/>
             </div>
         </div>
     </div>
 </form>
 </body>
-<script type="text/javascript" src="script.js"></script>
+<script src="js/script.js"></script>
 </html>
