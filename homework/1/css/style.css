@@ -124,3 +124,11 @@ padding-left:20px;
 		display:inline;
 		font-family: "Garamond", "Times new roman", serif;
 	}
+.hirelink{
+	display: block;
+	padding: 15px 20px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	background-color: #146EB4;
+}

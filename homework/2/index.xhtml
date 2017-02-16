@@ -5,25 +5,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>Input Box | Jack Wu</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
     <div class="joinbox">
         <div class="left">
-            <p>User Name:<input type="text"></input></p>
+            <p>User Name:<input type="text" /></p>
             <div class="currentskill">
-                <p>Your Current Skills</p>
                 <form>
+                    <fieldset>
+                        <legend>Your Current Skills</legend>
                     <input type="checkbox" name="skills" />Web Design<br />
                     <input type="checkbox" name="skills" />Java<br />
                     <input type="checkbox" name="skills" />Database<br />
+                    </fieldset>
                 </form><!-- End of Skills Checkbox box-->
             </div>
-            <div class="cityexpect">
-                <p>City Expected</p>
+            <div class="cityexpect">.
                 <form>
+                    <fieldset>
+                        <legend>City Expected</legend>
                     <input type="radio" name="citys" />Beijing<br />
                     <input type="radio" name="citys" />Shenzhen<br />
                     <input type="radio" name="citys" />Zhuhai<br />
+                    </fieldset>
                 </form>
             </div><!-- End of City Expected radio box-->
         </div><!-- End of Left div-->
@@ -36,6 +41,17 @@
                     <option value="Engineer">Engineer</option>
                     <option value="Architect">Architect</option>
                 </select>
+            </div>
+            <div class="postionleft">
+                Recent Jobs
+
+            </div>
+            <div class="postionrigth">
+                Work Experience:<br />
+                <textarea rows="8" cols="20"></textarea>
+            </div>
+            <div class="upload">
+                Upload a file:<input type="file"></input>
             </div>
         </div>
     </div>
