@@ -20,7 +20,7 @@ function ainfo(){
 	}
 
 	function ce(){
-	var select = document.getElementByName("city");
+	var select = document.getElementsByName("city");
 	var result = [];
 	var option ;
 		for (var i = 0, iLen = select.length; i<iLen; i++){
@@ -74,10 +74,14 @@ function ainfo(){
         }
         return result;
 	}
+
+checkinfo = "Name: " + userName + "\n" + "Current Skills: " + skills() + "\n" + "City Expected: " + ce() + "\n" + "Position: " + position() + "\n" + "Recent Jobs: " + jobs() + "\n" + "Work Experience: " + text() + "\n" + "Upload file: " + file();
 /*alert("User Name: " + userName);*/
-alert("Name: " + userName + "\n" + "Current Skills: " + skills() + "\n" + "City Expected: " + ce() + "\n" + "Position: " + position() + "\n" + "Recent Jobs: " + jobs() + "\n" + "Work Experience: " + text() + "\n" + "Upload file: " + file());
+alert(checkinfo);
 }
 
 function resetinfo(){
-	document.getElementById("form").reset();
+	if(confirm("Are you sure?")){
+		document.getElementById("form").reset();
+	}
 }
