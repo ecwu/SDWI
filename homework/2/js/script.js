@@ -90,6 +90,7 @@ function emailchange(){
 	var email = document.getElementById("email");
 	var atindex = document.getElementById("email").value.indexOf("@");
 	var gotindex = document.getElementById("email").value.indexOf(".");
+	/*RegExp [a-zA-Z0-9]@+[a-zA-Z0-9].+*/
 	if (atindex == -1 || gotindex == -1) {
 		document.getElementById("email").setAttribute("class","form-control has-danger");
 	}else if (gotindex-1 == atindex){
