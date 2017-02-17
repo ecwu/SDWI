@@ -86,13 +86,13 @@ function resetinfo(){
 	}
 }
 
-function email(){
+function emailchange(){
 	var email = document.getElementById("email");
 	var atindex = document.getElementById("email").value.indexOf("@");
 	var gotindex = document.getElementById("email").value.indexOf(".");
 	if (atindex == -1 || gotindex == -1) {
-		email.setAttribute("class", "has-danger");
+		document.getElementById("email").setAttribute("class","form-control has-danger");
 	}else{
-		email.setAttribute("class", "has-success");
+		document.getElementById("email").setAttribute("class","form-control has-success");
 	}
 }

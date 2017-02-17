@@ -22,6 +22,15 @@ legend {
     line-height: inherit;
 }
 
+.has-success {
+    border-color: #5cb85c;
+}
+
+.has-danger {
+    border-color: #d9534f;
+}
+
+
 .title{
 	padding-top: 10px;
 }
