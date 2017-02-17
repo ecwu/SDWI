@@ -4,10 +4,10 @@ function ainfo(){
 	function skills(){
 	var selecta = document.getElementById('skilla');
 	var selectb = document.getElementById('skillb');
-	var selectc = document.getElementById('skillc');
-	var result = [];
+	var selectc = document.getElementById('skillc');/*import document data to var*/
+	var result = [];/*define a new array*/
 	var input;
-			if (selecta.checked){
+			if (selecta.checked){/**/
 				result.push(" " + selecta.value);
 			}
 			if (selectb.checked){
@@ -83,5 +83,16 @@ alert(checkinfo);
 function resetinfo(){
 	if(confirm("Are you sure?")){
 		document.getElementById("form").reset();
+	}
+}
+
+function email(){
+	var email = document.getElementById("email");
+	var atindex = document.getElementById("email").value.indexOf("@");
+	var gotindex = document.getElementById("email").value.indexOf(".");
+	if (atindex == -1 || gotindex == -1) {
+		email.setAttribute("class", "has-danger");
+	}else{
+		email.setAttribute("class", "has-success");
 	}
 }
