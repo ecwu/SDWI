@@ -1,0 +1,73 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Join Us | SDWI 2017</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+<form id=form>
+    <div class="container">
+        <div class="joinbox">
+            <p class="joinboxtitle">Please Fill in the form below to submit</p>
+            <div class="left">
+                <p>Name: <input type="text" id="username" /></p><br />
+                <div class="currentskill">
+                    <fieldset id="skills">
+                        <legend>Your Current Skills</legend>
+                    <input type="checkbox" id="skilla" value="Web Design" name="skills" />Web Design<br />
+                    <input type="checkbox" id="skillb" value="Java" name="skills" />Java<br />
+                    <input type="checkbox" id="skillc" value="Database" name="skills" />Database<br />
+                    </fieldset>
+                </div>
+                <br />
+                <div id="city">
+                    <fieldset>
+                        <legend>City Expected</legend>
+                        <input type="radio" value="Beijing" name="city" />Beijing<br />
+                        <input type="radio" value="Shenzhen" name="city" />Shenzhen<br />
+                        <input type="radio" value="Zhuhai" name="city" />Zhuhai<br />
+                    </fieldset>
+                </div><!-- End of City Expected radio box-->
+            </div><!-- End of Left div-->
+            <div class="right">
+                <div class="postion">
+                    <p>Position:</p>
+                    <select name="position" id="position">
+                        <option value="Officer">Officer</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Architect">Architect</option>
+                    </select>
+                </div>
+                <div class="postionleft">
+                    <p>Recent Jobs</p>
+                    <select multiple="multiple" size="5" id="multiple">
+                        <option value="Assistant">Assistant</option>
+                        <option value="Software Engineer">Software Engineer</option>
+                        <option value="Customer service">Customer service</option>
+                        <option value="Manager">Manager</option>
+                        <option value="CEO">CEO</option>
+                    </select>
+                </div>
+                <div class="postionright">
+                    <p>Work Experience:</p>
+                    <textarea rows="8" cols="20" id="text"></textarea>
+                </div>
+
+                <div class="upload">
+                    <br />Upload a file: <input type="file" id="file" />
+                </div>
+            </div>
+            <div class="btn">
+                <input type="button" value="Reset" onclick="reset()"/>
+                <input type="button" value="Submit" onclick="ainfo()"/>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+<script src="js/script.js"></script>
+</html>
