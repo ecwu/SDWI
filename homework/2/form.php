@@ -23,8 +23,7 @@ $experience=$_POST["exp"];
 <table class="table">
   <thead>
     <tr>
-      <th>Category</th>
-      <th>First Name</th>
+      <th>Submitted Infomation</th>
     </tr>
   </thead>
   <tbody>
