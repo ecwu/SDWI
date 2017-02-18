@@ -8,7 +8,7 @@ function ainfo(){
 	var result = [];/*define a new array*/
 	var input;
 			if (selecta.checked){
-				result.push(" " + selecta.value);
+				result.push(selecta.value);
 			}
 			if (selectb.checked){
 				result.push(" " + selectb.value);
@@ -79,6 +79,14 @@ function ainfo(){
         return result;
 	}
 
+function fill(){
+	document.getElementById('cs').value = skills();
+	document.getElementById('citye').value = ce();
+	document.getElementById('po').value = position();
+	document.getElementById('rj').value = jobs();
+}
+
+
 checkinfo = "Name: " + userName + "\n"
 + "Email: " + emailinfo() + "\n"
 + "Current Skills: " + skills() + "\n"
@@ -87,7 +95,10 @@ checkinfo = "Name: " + userName + "\n"
 + "Recent Jobs: " + jobs() + "\n"
 + "Work Experience: " + text() + "\n"
 + "Upload file: " + file();
+fill();
 alert(checkinfo);
+document.getElementById("gf").disabled=false;
+document.getElementById("gf").setAttribute("class","btn btn-success")
 }
 
 function resetinfo(){

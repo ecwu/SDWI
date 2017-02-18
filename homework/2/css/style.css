@@ -67,3 +67,7 @@ legend {
 .copyrighttext{
 	margin-bottom: 0px;
 }
+
+.dispn{
+	display: none;
+}

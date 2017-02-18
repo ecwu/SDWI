@@ -11,14 +11,14 @@
 </div>
 <div class="container">
 <h2 class="title">Please fill in the form below to submit.</h2>
-  <form id="form">
+  <form id="form" action="form.php" method="post">
     <p>Name &amp; Email:</p>
       <div class="row">
           <div class="col">
-            <input class="form-control" type="text" id="username" placeholder="Name">
+            <input class="form-control" type="text" id="username" placeholder="Name" name="username">
           </div>
           <div class="col">
-            <input class="form-control" type="Email" id="email" placeholder="Email" onchange="emailchange()">
+            <input class="form-control" type="Email" id="email" placeholder="Email" onchange="emailchange()"name="email">
           </div>
       </div>
       <br>
@@ -78,7 +78,7 @@
       <p>Work Experience</p>
       <div class="row">
           <div class="col">
-            <textarea rows="8" id="text" class="form-control"></textarea>
+            <textarea rows="8" id="text" class="form-control" name="exp"></textarea>
           </div>
       </div>
       <p>Upload a file:</p>
@@ -89,12 +89,17 @@
             </label>
           </div>
       </div>
-  </form>
-  <br>
-        <div class="btnmiddle">
+      <input type="text" style="display:none" name="cs" id="cs">
+      <input type="text" style="display:none" name="citye" id="citye">
+      <input type="text" style="display:none" name="po" id="po">
+      <input type="text" style="display:none" name="rj" id="rj">
+      <div class="btnmiddle">
           <input type="button" value="Reset" class="btn btn-danger" onclick="resetinfo()"/>
           <input type="button" value="Submit" class="btn btn-primary" onclick="ainfo()"/>
+          <input type="submit" value="Generate Form" class="btn" id="gf" disabled="disabled" />
       </div>
+  </form>
+  <br>
 </div>
 
 <footer class="footer">
