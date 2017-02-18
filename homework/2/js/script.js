@@ -7,7 +7,7 @@ function ainfo(){
 	var selectc = document.getElementById('skillc');/*import document data to var*/
 	var result = [];/*define a new array*/
 	var input;
-			if (selecta.checked){/**/
+			if (selecta.checked){
 				result.push(" " + selecta.value);
 			}
 			if (selectb.checked){
@@ -19,8 +19,8 @@ function ainfo(){
 		return result; 
 	}
 
-	function emailinfo{
-	var email = document.getElementById("email").value;
+	function emailinfo(){
+	return email = document.getElementById("email").value;
 	}
 
 	function ce(){
@@ -79,10 +79,8 @@ function ainfo(){
         return result;
 	}
 
-if (emailifo ==  
-
-checkinfo = 
-"Name: " + userName + "\n"
+checkinfo = "Name: " + userName + "\n"
++ "Email: " + emailinfo() + "\n"
 + "Current Skills: " + skills() + "\n"
 + "City Expected: " + ce() + "\n"
 + "Position: " + position() + "\n"
@@ -100,7 +98,7 @@ function resetinfo(){
 
 function emailchange(){
 	var email = document.getElementById("email").value;
-	var regt = /^[A-Za-zd]+([-_.][A-Za-zd]+)*@([A-Za-zd]+[-.])+[A-Za-zd]{2,5}$/;/*Reg Test Temp*/
+	var regt = /^[A-Za-z0-9]+([-_.][A-Za-z0-9]+)*@([A-Za-z0-9]+[-.])+[A-Za-z]{2,5}$/;/*Reg Test Temp*/
 	if (regt.test(email)) {
 		document.getElementById("email").setAttribute("class","form-control has-success");
 	}else{
