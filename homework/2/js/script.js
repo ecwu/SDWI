@@ -19,6 +19,10 @@ function ainfo(){
 		return result; 
 	}
 
+	function emailinfo{
+	var email = document.getElementById("email").value;
+	}
+
 	function ce(){
 	var select = document.getElementsByName("city");
 	var result = [];
@@ -75,8 +79,16 @@ function ainfo(){
         return result;
 	}
 
-checkinfo = "Name: " + userName + "\n" + "Current Skills: " + skills() + "\n" + "City Expected: " + ce() + "\n" + "Position: " + position() + "\n" + "Recent Jobs: " + jobs() + "\n" + "Work Experience: " + text() + "\n" + "Upload file: " + file();
-/*alert("User Name: " + userName);*/
+if (emailifo ==  
+
+checkinfo = 
+"Name: " + userName + "\n"
++ "Current Skills: " + skills() + "\n"
++ "City Expected: " + ce() + "\n"
++ "Position: " + position() + "\n"
++ "Recent Jobs: " + jobs() + "\n"
++ "Work Experience: " + text() + "\n"
++ "Upload file: " + file();
 alert(checkinfo);
 }
 
@@ -87,15 +99,11 @@ function resetinfo(){
 }
 
 function emailchange(){
-	var email = document.getElementById("email");
-	var atindex = document.getElementById("email").value.indexOf("@");
-	var gotindex = document.getElementById("email").value.indexOf(".");
-	/*RegExp [a-zA-Z0-9]@+[a-zA-Z0-9].+*/
-	if (atindex == -1 || gotindex == -1) {
-		document.getElementById("email").setAttribute("class","form-control has-danger");
-	}else if (gotindex-1 == atindex){
-		document.getElementById("email").setAttribute("class","form-control has-danger");
-	}else{
+	var email = document.getElementById("email").value;
+	var regt = /^[A-Za-zd]+([-_.][A-Za-zd]+)*@([A-Za-zd]+[-.])+[A-Za-zd]{2,5}$/;/*Reg Test Temp*/
+	if (regt.test(email)) {
 		document.getElementById("email").setAttribute("class","form-control has-success");
+	}else{
+		document.getElementById("email").setAttribute("class","form-control has-danger");
 	}
 }
