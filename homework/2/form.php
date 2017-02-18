@@ -15,7 +15,7 @@ $experience=$_POST["exp"];
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<div class="container banner">
+<div class="banner">
     Join My Company<a href="../myhome.html" class="backlink">Back</a>
 </div>
 <div class="container">

@@ -44,8 +44,9 @@ legend {
 	max-width: 100%;
 	height: 54px;
 	background-color: #222222;
-	color: #c0c0c0;
+	color: #FFFFFF;
 	line-height: 54px;
+	padding: 0 100px 0 100px;
 }
 .backlink{
 	float: right;
