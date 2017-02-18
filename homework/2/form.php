@@ -6,11 +6,12 @@ $city=$_POST["citye"];
 $position=$_POST["po"];
 $recent=$_POST["rj"];
 $experience=$_POST["exp"];
-?>
+?><!-- post all the info from the last page -->
 <!DOCTYPE html>
 <html>
 <head>
   <title>Join my company form | SDWI2017</title>
+  <!-- Bootstrap Exteral Style -->
   <link href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -23,7 +24,7 @@ $experience=$_POST["exp"];
 <table class="table">
   <thead>
     <tr>
-      <th>Submitted Infomation</th>
+      <th>Submitted Infomation</th><!-- a infomation table -->
     </tr>
   </thead>
   <tbody>
@@ -60,6 +61,7 @@ $experience=$_POST["exp"];
 
 </div>
 </body>
+<!-- Bootstrap js -->
 <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.js"></script>
 </html>
