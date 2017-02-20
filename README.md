@@ -6,6 +6,7 @@ Software Development Workshop I
 `Finished`
 2. [Homework II](https://ecwu.github.io/SDWI/homework/2/index.html)
 `Finished`
+3. [Homework III]
 
 ## Exercise Quicklink
 1. [Exercise I](https://ecwu.github.io/SDWI/exercise/1/index.html)
