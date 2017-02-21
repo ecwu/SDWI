@@ -15,24 +15,28 @@
     </div>
     <div class="number-btn">
         <div class="col">
-            <button class="btn btn-lg btn-l" type="submit">7</button>
-            <button class="btn btn-lg btn-l" type="submit">8</button>
-            <button class="btn btn-lg btn-l" type="submit">9</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="numBtnSeven()">7</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="numBtnEight()">8</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="numBtnNine()">9</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="operationPlus()">+</button>
         </div>
         <div class="col">
-            <button class="btn btn-lg btn-l" type="submit">4</button>
-            <button class="btn btn-lg btn-l" type="submit">5</button>
-            <button class="btn btn-lg btn-l" type="submit">6</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="numBtnFour()">4</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="numBtnFive()">5</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="numBtnSix()">6</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="operationMinus()">-</button>
         </div>
         <div class="col">
-            <button class="btn btn-lg btn-l" type="submit">1</button>
-            <button class="btn btn-lg btn-l" type="submit">2</button>
-            <button class="btn btn-lg btn-l" type="submit">3</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="numBtnOne()">1</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="numBtnTwo()">2</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="numBtnThree()">3</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="operationMultiplication()">×</button>
         </div>
         <div class="col">
-            <button class="btn btn-lg btn-l" type="submit">.</button>
-            <button class="btn btn-lg btn-l" type="submit">0</button>
-            <button class="btn btn-primary btn-lg btn-l" type="submit">=</button>
+            <button class="btn btn-lg btn-l" type="submit" disabled="disabled" >.</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="numBtnZero()">0</button>
+            <button class="btn btn-primary btn-lg btn-l" type="submit" onclick="calOutput()">=</button>
+            <button class="btn btn-lg btn-l" type="submit" onclick="operationDivision()">÷</button>
         </div>
     </div>
 </div>
