@@ -1,6 +1,22 @@
 /**
  * Created by ecwu on 2/21/17.
  */
+
+π = Math.PI;
+e = Math.E;
+equaled = 0;
+function equalTest(){
+	if (equaled == 1){
+		constantCe();
+		equaled = 0;
+	}
+}
+
+function writeInfo(chars){
+	equalTest();
+	document.getElementById("display").value = document.getElementById("display").value + chars;
+}
+
 function numBtnOne(){
 	document.getElementById("display").value = document.getElementById("display").value + "1";
 }
@@ -61,12 +77,19 @@ function constantPi(){
 	document.getElementById("display").value = document.getElementById("display").value + "π";
 }
 
+function constantE(){
+	document.getElementById("display").value = document.getElementById("display").value + "e";
+}
+
+function constantCe(){
+	document.getElementById("display").value = "";
+}
+
 function calOutput(){
-	var pi = document.getElementById("display")
 	var display = document.getElementById("display").value;
-	pi = pi.indexOf("π");
 	if (display != ""){
+		document.getElementById("equation").value = display;
 		document.getElementById("display").value = eval(display);
+		equaled = 1;
 	}
-	alert(pi);
 }
