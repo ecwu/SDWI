@@ -57,9 +57,16 @@ function operationDivision(){
 	document.getElementById("display").value = document.getElementById("display").value + "/";
 }
 
+function constantPi(){
+	document.getElementById("display").value = document.getElementById("display").value + "π";
+}
+
 function calOutput(){
-	display = document.getElementById("display").value;
+	var pi = document.getElementById("display")
+	var display = document.getElementById("display").value;
+	pi = pi.indexOf("π");
 	if (display != ""){
 		document.getElementById("display").value = eval(display);
 	}
+	alert(pi);
 }
