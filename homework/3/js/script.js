@@ -83,6 +83,7 @@ function constantE(){
 
 function constantCe(){
 	document.getElementById("display").value = "";
+	document.getElementById("equation").value = "";
 }
 
 function calOutput(){
