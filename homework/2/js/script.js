@@ -102,7 +102,7 @@ document.getElementById("gf").setAttribute("class","btn btn-success")/*change st
 }
 
 function resetinfo(){/*a question before reset the page*/
-	if(confirm("Are you sure?")){
+	if(confirm("Are you sure?")){/*a reset confirm buttom*/
 		document.getElementById("form").reset();
 	}
 }
