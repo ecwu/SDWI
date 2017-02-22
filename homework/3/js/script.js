@@ -18,67 +18,88 @@ function writeInfo(chars){
 }
 
 function numBtnOne(){
-	document.getElementById("display").value = document.getElementById("display").value + "1";
+	var inputChars = "1";
+	writeInfo(inputChars);
 }
 
 function numBtnTwo(){
-	document.getElementById("display").value = document.getElementById("display").value + "2";
+	var inputChars = "2";
+	writeInfo(inputChars);
 }
 
 function numBtnThree(){
-	document.getElementById("display").value = document.getElementById("display").value + "3";
+	var inputChars = "3";
+	writeInfo(inputChars);
 }
 
 function numBtnFour(){
-	document.getElementById("display").value = document.getElementById("display").value + "4";
+	var inputChars = "4";
+	writeInfo(inputChars);
 }
 
 function numBtnFive(){
-	document.getElementById("display").value = document.getElementById("display").value + "5";
+	var inputChars = "5";
+	writeInfo(inputChars);
 }
 
 function numBtnSix(){
-	document.getElementById("display").value = document.getElementById("display").value + "6";
+	var inputChars = "6";
+	writeInfo(inputChars);
 }
 
 function numBtnSeven(){
-	document.getElementById("display").value = document.getElementById("display").value + "7";
+	var inputChars = "7";
+	writeInfo(inputChars);
 }
 
 function numBtnEight(){
-	document.getElementById("display").value = document.getElementById("display").value + "8";
+	var inputChars = "8";
+	writeInfo(inputChars);
 }
 
 function numBtnNine(){
-	document.getElementById("display").value = document.getElementById("display").value + "9";
+	var inputChars = "9";
+	writeInfo(inputChars);
 }
 
 function numBtnZero(){
-	document.getElementById("display").value = document.getElementById("display").value + "0";
+	var inputChars = "0";
+	writeInfo(inputChars);
+}
+
+function operationDot(){
+	var inputChars = ".";
+	writeInfo(inputChars);
 }
 
 function operationPlus(){
-	document.getElementById("display").value = document.getElementById("display").value + "+";
+	var inputChars = "+";
+	writeInfo(inputChars);
 }
 
 function operationMinus(){
-	document.getElementById("display").value = document.getElementById("display").value + "-";
+	var inputChars = "-";
+	writeInfo(inputChars);
 }
 
 function operationMultiplication(){
-	document.getElementById("display").value = document.getElementById("display").value + "*";
+	var inputChars = "*";
+	writeInfo(inputChars);
 }
 
 function operationDivision(){
-	document.getElementById("display").value = document.getElementById("display").value + "/";
+	var inputChars = "/";
+	writeInfo(inputChars);
 }
 
 function constantPi(){
-	document.getElementById("display").value = document.getElementById("display").value + "π";
+	var inputChars = "π";
+	writeInfo(inputChars);
 }
 
 function constantE(){
-	document.getElementById("display").value = document.getElementById("display").value + "e";
+	var inputChars = "e";
+	writeInfo(inputChars);
 }
 
 function constantCe(){
