@@ -7,9 +7,7 @@
     text-align: right;
 }
 .middle{
-    margin-top: 50px;
-    vertical-align:middle;
-    position:relative;
+    margin: 50px 20em 0px 20em;
 }
 .equa{
     color: gray;
