@@ -50,15 +50,19 @@ function functionTan(){
 }
 function functionFactor(){
     var display = document.getElementById("display").value;
-    var number = eval(display);
     var output = 1;
-    if (number === 0){
-    	for (var i=1; i<number; i++){
+    if (eval(display)%1 === 0){
+    	for (var i=1; i<=eval(display); i++){
 			output = output * i;
 		}
 	}
     document.getElementById("equation").value ="(" + display + ")!=";
     document.getElementById("display").value = output;
+}
+function functionTwoTimes(){
+    var display = document.getElementById("display").value;
+    document.getElementById("equation").value ="(" + display + ")^2=";
+    document.getElementById("display").value = eval(display*display);
 }
 function calOutput(){
 	equaled = 1;
