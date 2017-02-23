@@ -14,6 +14,7 @@ function equalTest(){
 
 
 function writeInfo(chars){
+	equalTest();
 	char = chars;
 	document.getElementById("display").value = document.getElementById("display").value + char;
 }
