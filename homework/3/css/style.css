@@ -1,6 +1,6 @@
-.btn-l{
+.btn-length{
     width: 100px;
-    margin: 5px 0 5px 0;
+    margin: 5px;
 }
 .eqright{
     vertical-align: middle;
@@ -8,4 +8,26 @@
 }
 .equa{
     color: gray;
+}
+.screen{
+    border-style: none;
+    width: 100%;
+    font-size: 30px;
+}
+.subscreen{
+    border-style: none;
+    width: 100%;
+    font-size: 21px;
+    border-bottom-color: #000000;
+    border-bottom: 1px solid;
+}
+.middle{
+    width:500px;
+    border: solid;
+}
+.number-btn{
+    padding: 0px 0px;
+}
+.function-btn{
+    padding: 0px 0px;
 }
