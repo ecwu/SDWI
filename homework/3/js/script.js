@@ -71,7 +71,7 @@ function functionXTimes(){
     for (var i=1; i<=times; i++){
         output = output * display;
     }
-    document.getElementById("equation").value ="(" + display + ")^2=";
+    document.getElementById("equation").value ="(" + display + ")^" + times + "=";
     document.getElementById("display").value = output;
 }
 function calOutput(){
