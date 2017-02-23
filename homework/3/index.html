@@ -16,40 +16,40 @@
         </div>
         <div class="number-btn">
             <div class="col">
-                <button class="btn btn-lg btn-l" type="submit" onclick="numBtnSeven()">7</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="numBtnEight()">8</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="numBtnNine()">9</button>
-                <button class="btn btn-info btn-lg btn-l" type="submit" onclick="operationPlus()">+</button>
+                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(7)">7</button>
+                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(8)">8</button>
+                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(9)">9</button>
+                <button class="btn btn-info btn-lg btn-l" type="submit" onclick="writeInfo('+')">+</button>
             </div>
             <div class="col">
-                <button class="btn btn-lg btn-l" type="submit" onclick="numBtnFour()">4</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="numBtnFive()">5</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="numBtnSix()">6</button>
-                <button class="btn btn-info btn-lg btn-l" type="submit" onclick="operationMinus()">-</button>
+                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(4)">4</button>
+                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(5)">5</button>
+                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(6)">6</button>
+                <button class="btn btn-info btn-lg btn-l" type="submit" onclick="writeInfo('-')">-</button>
             </div>
             <div class="col">
-                <button class="btn btn-lg btn-l" type="submit" onclick="numBtnOne()">1</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="numBtnTwo()">2</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="numBtnThree()">3</button>
-                <button class="btn btn-info btn-lg btn-l" type="submit" onclick="operationMultiplication()">×</button>
+                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(1)">1</button>
+                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(2)">2</button>
+                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(3)">3</button>
+                <button class="btn btn-info btn-lg btn-l" type="submit" onclick="writeInfo('*')">×</button>
             </div>
             <div class="col">
                 <button class="btn btn-lg btn-l" type="submit" onclick="operationDot()" >.</button>
                 <button class="btn btn-lg btn-l" type="submit" onclick="numBtnZero()">0</button>
                 <button class="btn btn-primary btn-lg btn-l" type="submit" onclick="calOutput()">=</button>
-                <button class="btn btn-info btn-lg btn-l" type="submit" onclick="operationDivision()">÷</button>
+                <button class="btn btn-info btn-lg btn-l" type="submit" onclick="writeInfo('/')">÷</button>
             </div>
         </div>
 
         <div class="function-btn">
             <div class="col">
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="constantPi()"><i>π</i></button>
+                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="writeInfo('π')"><i>π</i></button>
                 <button class="btn btn-danger btn-lg btn-l" type="submit" disabled="disabled" onclick="">ln</button>
                 <button class="btn btn-danger btn-lg btn-l" type="submit" disabled="disabled" onclick="">sin</button>
                 <button class="btn btn-danger btn-lg btn-l" type="submit" disabled="disabled" onclick="">x!</button>
             </div>
             <div class="col">
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="constantE()"><i>e</i></button>
+                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="writeInfo('e')"><i>e</i></button>
                 <button class="btn btn-danger btn-lg btn-l" type="submit" disabled="disabled" onclick="">log</button>
                 <button class="btn btn-danger btn-lg btn-l" type="submit" disabled="disabled" onclick="">cos</button>
                 <button class="btn btn-danger btn-lg btn-l" type="submit" disabled="disabled" onclick="">x<sup>2</sup></button>
