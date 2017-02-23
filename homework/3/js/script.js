@@ -64,6 +64,16 @@ function functionTwoTimes(){
     document.getElementById("equation").value ="(" + display + ")^2=";
     document.getElementById("display").value = eval(display*display);
 }
+function functionXTimes(){
+    var display = document.getElementById("display").value;
+    var times=prompt("y=","");
+    var output = 1;
+    for (var i=1; i<=times; i++){
+        output = output * display;
+    }
+    document.getElementById("equation").value ="(" + display + ")^2=";
+    document.getElementById("display").value = output;
+}
 function calOutput(){
 	equaled = 1;
 	var display = document.getElementById("display").value;
