@@ -1,8 +1,8 @@
 π = Math.PI;
 e = Math.E;
-/*assign two math constant*/
+//assign two math constant
 equaled = 0;
-/*assign a var to clean the screen*/
+//assign a var to clean the screen
 function equalTest(){
 	if (equaled == 1){
 		constantCe();
@@ -71,7 +71,7 @@ function functionXTimes(){
     for (var i=1; i<=times; i++){
         output = output * display;
     }
-    document.getElementById("equation").value ="(" + display + ")^2=";
+    document.getElementById("equation").value ="(" + display + ")^" + times + "=";
     document.getElementById("display").value = output;
 }
 function calOutput(){
@@ -81,4 +81,7 @@ function calOutput(){
 		document.getElementById("equation").value = display+"=";
 		document.getElementById("display").value = eval(display);
 	}
+}
+function delLast(){
+
 }

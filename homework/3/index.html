@@ -11,62 +11,63 @@
 <div class="container">
     <div class="middle">
         <div>
-            <input type="text" id="equation" class="form-control eqright equa" readonly="readonly">
-            <input type="text" id="display" class="form-control btn-lg eqright" readonly="readonly">
+            <input type="text" id="equation" class="eqright subscreen equa" readonly="readonly"><br>
+            <input type="text" id="display" class="eqright screen" readonly="readonly">
         </div>
         <div class="number-btn">
             <div class="col">
-                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(7)">7</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(8)">8</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(9)">9</button>
-                <button class="btn btn-info btn-lg btn-l" type="submit" onclick="writeInfo('+')">+</button>
+                <button class="btn btn-lg btn-length" type="submit" onclick="writeInfo(7)">7</button>
+                <button class="btn btn-lg btn-length" type="submit" onclick="writeInfo(8)">8</button>
+                <button class="btn btn-lg btn-length" type="submit" onclick="writeInfo(9)">9</button>
+                <button class="btn btn-info btn-lg btn-length" type="submit" onclick="writeInfo('+')">+</button>
                 
             </div>
             <div class="col">
-                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(4)">4</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(5)">5</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(6)">6</button>
-                <button class="btn btn-info btn-lg btn-l" type="submit" onclick="writeInfo('-')">-</button>
+                <button class="btn btn-lg btn-length" type="submit" onclick="writeInfo(4)">4</button>
+                <button class="btn btn-lg btn-length" type="submit" onclick="writeInfo(5)">5</button>
+                <button class="btn btn-lg btn-length" type="submit" onclick="writeInfo(6)">6</button>
+                <button class="btn btn-info btn-lg btn-length" type="submit" onclick="writeInfo('-')">-</button>
             </div>
             <div class="col">
-                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(1)">1</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(2)">2</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(3)">3</button>
-                <button class="btn btn-info btn-lg btn-l" type="submit" onclick="writeInfo('*')">×</button>
+                <button class="btn btn-lg btn-length" type="submit" onclick="writeInfo(1)">1</button>
+                <button class="btn btn-lg btn-length" type="submit" onclick="writeInfo(2)">2</button>
+                <button class="btn btn-lg btn-length" type="submit" onclick="writeInfo(3)">3</button>
+                <button class="btn btn-info btn-lg btn-length" type="submit" onclick="writeInfo('*')">×</button>
             </div>
             <div class="col">
-                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo('.')" >.</button>
-                <button class="btn btn-lg btn-l" type="submit" onclick="writeInfo(0)">0</button>
-                <button class="btn btn-primary btn-lg btn-l" type="submit" onclick="calOutput()">=</button>
-                <button class="btn btn-info btn-lg btn-l" type="submit" onclick="writeInfo('/')">÷</button>
+                <button class="btn btn-lg btn-length" type="submit" onclick="writeInfo('.')" >.</button>
+                <button class="btn btn-lg btn-length" type="submit" onclick="writeInfo(0)">0</button>
+                <button class="btn btn-primary btn-lg btn-length" type="submit" onclick="calOutput()">=</button>
+                <button class="btn btn-info btn-lg btn-length" type="submit" onclick="writeInfo('/')">÷</button>
             </div>
         </div>
 
         <div class="function-btn">
             <div class="col">
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="writeInfo('π')"><i>π</i></button>
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="functionLogE()">ln</button>
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="functionSin()">sin</button>
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="functionFactor()">x!</button>
+                <button class="btn btn-danger btn-lg btn-length" type="submit" onclick="writeInfo('π')"><i>π</i></button>
+                <button class="btn btn-danger btn-lg btn-length" type="submit" onclick="functionLogE()">ln</button>
+                <button class="btn btn-danger btn-lg btn-length" type="submit" onclick="functionSin()">sin</button>
+                <button class="btn btn-danger btn-lg btn-length" type="submit" onclick="functionFactor()">x!</button>
             </div>
             <div class="col">
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="writeInfo('e')"><i>e</i></button>
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="functionLogTen()">log</button>
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="functionCos()">cos</button>
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="functionTwoTimes()">x<sup>2</sup></button>
+                <button class="btn btn-danger btn-lg btn-length" type="submit" onclick="writeInfo('e')"><i>e</i></button>
+                <button class="btn btn-danger btn-lg btn-length" type="submit" onclick="functionLogTen()">log</button>
+                <button class="btn btn-danger btn-lg btn-length" type="submit" onclick="functionCos()">cos</button>
+                <button class="btn btn-danger btn-lg btn-length" type="submit" onclick="functionTwoTimes()">x<sup>2</sup></button>
             </div>
             <div class="col">
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="constantCe()">CE</button>
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="functionSqrt()">√</button>
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="functionTan()">tan</button>
-                <button class="btn btn-danger btn-lg btn-l" type="submit" onclick="functionXTimes()">x<sup>y</sup></button>
+                <button class="btn btn-danger btn-lg btn-length" type="submit" onclick="constantCe()">CE</button>
+                <button class="btn btn-danger btn-lg btn-length" type="submit" onclick="functionSqrt()">√</button>
+                <button class="btn btn-danger btn-lg btn-length" type="submit" onclick="functionTan()">tan</button>
+                <button class="btn btn-danger btn-lg btn-length" type="submit" onclick="functionXTimes()">x<sup>y</sup></button>
             </div>
             <div class="col">
-                <button class="btn btn-warning btn-lg btn-l" type="submit" onclick="writeInfo('(')">(</button>
-                <button class="btn btn-warning btn-lg btn-l" type="submit" onclick="writeInfo(')')">)</button>
+                <button class="btn btn-warning btn-lg btn-length" type="submit" onclick="writeInfo('(')">(</button>
+                <button class="btn btn-warning btn-lg btn-length" type="submit" onclick="writeInfo(')')">)</button>
             </div>
         </div>
     </div>
+    <p class="copyright">Design by Ecwu&copy;</p>
 </div>
 </body>
 <script src="js/script.js"></script><!-- js script -->
