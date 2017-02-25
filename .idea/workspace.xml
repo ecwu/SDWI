@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2aab88-8d4a-4ada-8182-6072db87499e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/3/ms/js/script.js" afterPath="$PROJECT_DIR$/homework/3/ms/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,8 +46,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework/3/ms/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -386,7 +386,7 @@
       <workItem from="1487816885931" duration="5360000" />
       <workItem from="1487844031391" duration="9110000" />
       <workItem from="1487905903175" duration="2839000" />
-      <workItem from="1487990438285" duration="3319000" />
+      <workItem from="1487990438285" duration="4837000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1487214280541</created>
@@ -399,7 +399,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31748000" />
+    <option name="totallyTimeSpent" value="33266000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -656,8 +656,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homework/3/ms/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
