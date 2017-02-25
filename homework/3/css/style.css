@@ -5,7 +5,7 @@ body{
 }
 .cal{
     box-shadow: 0px 0px 15px #9b9b9b;
-    width:400px;
+    width:500px;
     position: absolute;
     text-align: center;
     left:50%;
@@ -13,12 +13,12 @@ body{
     transform: translate(-50%,-50%);
 }
 .btngroup{
-    width:400px;
+    width:500px;
     height:400px;
 }
 .subscreen{
     padding: 5px;
-    width:370px;
+    width:95%;
     height:25px;
     border-style: none;
     text-align: right;
@@ -26,7 +26,7 @@ body{
     color: #a1a1a1;
 }
 .screen{
-    width:370px;
+    width:95%;
     padding: 5px;
     padding: 5px;
     height:75px;
@@ -35,24 +35,46 @@ body{
     font-size: 75px;
     color: #ff9900;
 }
+
+
+.screenbl{
+    transition: height .2s,font-size .2s,color .2s;
+    -moz-transition: height .2s,font-size .2s,color .2s;
+    -o-transition: height .2s,font-size .2s,color .2s;
+    -webkit-transition: height .2s,font-size .2s,color .2s;
+}
+.screenaf{
+    transition: height 0s,font-size 0s,color 0s;
+    -moz-transition: height 0s,font-size 0s,color 0s;
+    -o-transition: height 0s,font-size 0s,color 0s;
+    -webkit-transition: height 0s,font-size 0s,color 0s;
+}
+
+
+
+
 .btn{
+    transition: background 0.2s;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     float: left;
-    width:100px;
+    width:25%;
     height:50px;
     font-size: 25px;
     border-style: none;
 }
 .btn{
+    transition: background 0.2s linear 0s;
     background-color: #f0f0f0;
     color: #000000;
 }
 .btn:hover{
+    transition: background 0.2s linear 0s;
     background: linear-gradient(180deg, #006699, #0F7DC2);
     color: #ffffff;
 }
 .btn:active{
+    transition: background 0.2s linear 0s;
     background: linear-gradient(180deg, #ff9900, #ff7d2a);
     color: #ffffff;
 }
