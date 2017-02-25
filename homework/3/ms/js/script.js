@@ -4,6 +4,14 @@ e = Math.E;
 equaled = 0;
 equalclicked = 0;
 //assign a var to clean the screen
+function tempAns(){
+    var display = document.getElementById("equation").value;
+    var displaysub = display.substring(0,display.length-1);
+    if (document.getElementById("equation").value != ""){
+        document.getElementById("display").value = eval(displaysub);
+        equaled = 0;
+    }
+}
 function equalTest(){
 	if (equaled == 1){
 		constantCe();
@@ -31,6 +39,7 @@ function writeInfo(chars){
 function writeOper(chars){
     char = chars;
     document.getElementById("equation").value = document.getElementById("equation").value + " " + document.getElementById("display").value + " " + char;
+    tempAns();
     equaled = 1;
 }
 
@@ -109,7 +118,7 @@ function calOutput(){
     equalclicked = 1;
 	equaled = 1;
     emptyTest();
-    writeOper('')
+    writeOper('');
 	var display = document.getElementById("equation").value;
 	if (display != ""){
 		document.getElementById("equation").value = display+"=";
