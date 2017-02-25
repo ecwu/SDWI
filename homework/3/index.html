@@ -3,72 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculator | SDWI 2017</title>
+    <!-- external CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<div class="container">
-    <div class="cal">
-        <div>
-            <input type="text" id="equation" class="subscreen" readonly="readonly"><br>
-            <input type="text" id="display" class="screen" readonly="readonly">
-        </div>
-        <div class="btngroup">
-            <div class="col">
-                <button class="btn" type="submit" onclick="writeInfo('(')">(</button>
-                <button class="btn" type="submit" onclick="writeInfo(')')">)</button>
-                <button class="btn" type="submit" onclick="constantCe()">CE</button>
-                <button class="btn" type="submit" onclick="delLast()">←</button>
+    <div class="container">
+        <!--main container width set no padding and margin-->
+        <div class="cal">
+            <!--box for calculator fixed width and height-->
+            <!--auto center align-->
+            <div>
+                <input type="text" id="equation" class="subscreen" readonly="readonly">
+                <!--sub screen for show inputted equation-->
+                <input type="text" id="display" class="screen" readonly="readonly">
+                <!--main screen for displays answers and inputed chars-->
             </div>
-            <div class="col">
-                <button class="btn dark" type="submit" onclick="writeInfo(7)">7</button>
-                <button class="btn dark" type="submit" onclick="writeInfo(8)">8</button>
-                <button class="btn dark" type="submit" onclick="writeInfo(9)">9</button>
-                <button class="btn org" type="submit" onclick="writeInfo('+')">+</button>
+            <div class="btngroup">
+                <div class="col">
+                    <button class="btn" type="submit" onclick="writeInfo('(')">(</button>
+                    <button class="btn" type="submit" onclick="writeInfo(')')">)</button>
+                    <button class="btn" type="submit" onclick="constantCe()">CE</button><!--clean all info from two screen-->
+                    <button class="btn" type="submit" onclick="delLast()">←</button><!--delete latest char from the display screen-->
+                    <!--basic btn set-->
+                </div>
+                <div class="col">
+                    <button class="btn dark" type="submit" onclick="writeInfo(7)">7</button>
+                    <button class="btn dark" type="submit" onclick="writeInfo(8)">8</button>
+                    <button class="btn dark" type="submit" onclick="writeInfo(9)">9</button>
+                    <button class="btn org" type="submit" onclick="writeInfo('+')">+</button>
+                    <!--number and operation btn set 1 -->
 
-            </div>
-            <div class="col">
-                <button class="btn dark" type="submit" onclick="writeInfo(4)">4</button>
-                <button class="btn dark" type="submit" onclick="writeInfo(5)">5</button>
-                <button class="btn dark" type="submit" onclick="writeInfo(6)">6</button>
-                <button class="btn org" type="submit" onclick="writeInfo('-')">-</button>
-            </div>
-            <div class="col">
-                <button class="btn dark" type="submit" onclick="writeInfo(1)">1</button>
-                <button class="btn dark" type="submit" onclick="writeInfo(2)">2</button>
-                <button class="btn dark" type="submit" onclick="writeInfo(3)">3</button>
-                <button class="btn org" type="submit" onclick="writeInfo('*')">×</button>
-            </div>
-            <div class="col">
-                <button class="btn dark" type="submit" onclick="writeInfo('.')" >.</button>
-                <button class="btn dark" type="submit" onclick="writeInfo(0)">0</button>
-                <button class="btn blue" type="submit" onclick="calOutput()">=</button>
-                <button class="btn org" type="submit" onclick="writeInfo('/')">÷</button>
-            </div>
-            <div class="col">
-                <button class="btn" type="submit" onclick="writeInfo('π')"><i>π</i></button>
-                <button class="btn" type="submit" onclick="functionLogE()">ln</button>
-                <button class="btn" type="submit" onclick="functionSin()">sin</button>
-                <button class="btn" type="submit" onclick="functionFactor()">x!</button>
-            </div>
-            <div class="col">
-                <button class="btn" type="submit" onclick="writeInfo('e')"><i>e</i></button>
-                <button class="btn" type="submit" onclick="functionLogTen()">log</button>
-                <button class="btn" type="submit" onclick="functionCos()">cos</button>
-                <button class="btn" type="submit" onclick="functionTwoTimes()">x<sup>2</sup></button>
-            </div>
-            <div class="col">
-                <button class="btn" type="submit" onclick="functionSqrt()">√</button>
-                <button class="btn" type="submit" onclick="functionTan()">tan</button>
-                <button class="btn" type="submit" onclick="functionXTimes()">x<sup>y</sup></button>
-            </div>
-            <p class="copyright">&copy; ECWU</p>
-        </div>
-    </div>
-    </div>
-</div>
+                </div>
+                <div class="col">
+                    <button class="btn dark" type="submit" onclick="writeInfo(4)">4</button>
+                    <button class="btn dark" type="submit" onclick="writeInfo(5)">5</button>
+                    <button class="btn dark" type="submit" onclick="writeInfo(6)">6</button>
+                    <button class="btn org" type="submit" onclick="writeInfo('-')">-</button>
+                    <!--number and operation btn set 2 -->
+                </div>
+                <div class="col">
+                    <button class="btn dark" type="submit" onclick="writeInfo(1)">1</button>
+                    <button class="btn dark" type="submit" onclick="writeInfo(2)">2</button>
+                    <button class="btn dark" type="submit" onclick="writeInfo(3)">3</button>
+                    <button class="btn org" type="submit" onclick="writeInfo('*')">×</button>
+                    <!--number and operation btn set 3 -->
+                </div>
+                <div class="col">
+                    <button class="btn dark" type="submit" onclick="writeInfo('.')" >.</button>
+                    <button class="btn dark" type="submit" onclick="writeInfo(0)">0</button>
+                    <button class="btn blue" type="submit" onclick="calOutput()">=</button>
+                    <button class="btn org" type="submit" onclick="writeInfo('/')">÷</button>
+                    <!--number and operation btn set 4 -->
+                </div>
+                <!--function btn sets--><!--input number first-->
+                <div class="col">
+                    <button class="btn" type="submit" onclick="writeInfo('π')"><i>π</i></button>
+                    <button class="btn" type="submit" onclick="functionLogE()">ln</button>
+                    <button class="btn" type="submit" onclick="functionSin()">sin</button>
+                    <button class="btn" type="submit" onclick="functionFactor()">x!</button>
+                    <!--external constant and function btn -->
+                </div>
+                <div class="col">
+                    <button class="btn" type="submit" onclick="writeInfo('e')"><i>e</i></button>
+                    <button class="btn" type="submit" onclick="functionLogTen()">log</button>
+                    <button class="btn" type="submit" onclick="functionCos()">cos</button>
+                    <button class="btn" type="submit" onclick="functionTwoTimes()">x<sup>2</sup></button>
+                    <!--function btn set -->
+                </div>
+                <div class="col">
+                    <button class="btn" type="submit" onclick="functionSqrt()">√</button>
+                    <button class="btn" type="submit" onclick="functionTan()">tan</button>
+                    <button class="btn" type="submit" onclick="functionXTimes()">x<sup>y</sup></button><!--for a power operation-->
+                </div>
+                <p class="copyright">&copy; ECWU</p><!--a copyright block-->
+            </div><!--btn group div end there-->
+        </div><!--cal div end there-->
+    </div><!--container div end there-->
 </body>
 <script src="js/script.js"></script><!-- js script -->
-<script type="text/javascript">
+<script type="text/javascript">/*an exter js to declare copyright info*/
     try {
     window.console && window.console.log && (console.log("Website Made by Zhenghao Wu"))
 } catch (e) {}

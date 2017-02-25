@@ -1,97 +1,79 @@
 body{
     margin: 0;
     padding: 0;
+    /*delete standard padding in browser*/
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /*basic font-family: sans-serif font*/
 }
 .cal{
     box-shadow: 0px 0px 15px #9b9b9b;
-    width:500px;
+    width:500px;/*set calculator's width as 500px*/
     position: absolute;
     text-align: center;
     left:50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    /*center align for the calculator box */
 }
 .btngroup{
     width:500px;
     height:400px;
+    /*set the width and height for the btn group*/
 }
 .subscreen{
     padding: 5px;
-    width:95%;
+    width:95%;/*the subscreen's width is the 95% of the cal div*//*AKA 475 PX*/
     height:25px;
-    border-style: none;
-    text-align: right;
+    border-style: none;/*delete input box's border*/
+    text-align: right;/*set the text align to the right*/
     font-size: 25px;
     color: #a1a1a1;
 }
 .screen{
-    width:95%;
+    width:95%;/*the screen's width is the 95% of the cal div*//*AKA 475 PX*/
     padding: 5px;
     padding: 5px;
-    height:75px;
+    height:50px;
     border-style: none;
-    text-align: right;
-    font-size: 75px;
+    text-align: right;/*set the text align to the right*/
+    font-size: 50px;
     color: #ff9900;
 }
-
-
-.screenbl{
-    transition: height .2s,font-size .2s,color .2s;
-    -moz-transition: height .2s,font-size .2s,color .2s;
-    -o-transition: height .2s,font-size .2s,color .2s;
-    -webkit-transition: height .2s,font-size .2s,color .2s;
-}
-.screenaf{
-    transition: height 0s,font-size 0s,color 0s;
-    -moz-transition: height 0s,font-size 0s,color 0s;
-    -o-transition: height 0s,font-size 0s,color 0s;
-    -webkit-transition: height 0s,font-size 0s,color 0s;
-}
-
-
-
-
 .btn{
-    transition: background 0.2s;
+    transition: background 0.2s;/*a little background transition effect*/
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-    float: left;
-    width:25%;
-    height:50px;
+    float: left;/*delete btn padding*/
+    width:25%;/*4 btn a col*/
+    height:50px;/*text vertical align*/
     font-size: 25px;
     border-style: none;
 }
 .btn{
-    transition: background 0.2s linear 0s;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0;/*standard btn background aka. 5 shades of gray*/
     color: #000000;
 }
 .btn:hover{
-    transition: background 0.2s linear 0s;
-    background: linear-gradient(180deg, #006699, #0F7DC2);
-    color: #ffffff;
+    box-shadow: 0px 0px 15px #b9b9b9;/*27 shades of gray background when the mouse is hover the btn*/
 }
 .btn:active{
-    transition: background 0.2s linear 0s;
-    background: linear-gradient(180deg, #ff9900, #ff7d2a);
+    background: linear-gradient(180deg, #ff9900, #ff7d2a);/*a linear gradient background when the btn is over the btn*/
     color: #ffffff;
 }
 .dark{
-    background-color: #fafafa;
+    background-color: #fafafa;/*a darker btn background for number btn group*/
     color: #000000;
 }
 .blue{
-    background-color: #146eb4;
+    background-color: #146eb4;/*blue background for = sign*/
     color: #ffffff;
 }
 .org{
-    background-color: #ff9900;
+    background-color: #ff9900;/*orange background for operation sign*/
     color: #ffffff;
 }
 
 .copyright{
-    height: 50px;
+    height: 50px;/*center align for copyright info*/
     line-height: 50px;
 }

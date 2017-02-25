@@ -1,104 +1,115 @@
 π = Math.PI;
 e = Math.E;
 //assign two math constant
-equaled = 0;
+equaled = 0;//a variable for equal sign click test
 //assign a var to clean the screen
-function equalTest(){
+function equalTest(){//if =sign was clicked, all screen will clean before you start a new calculation
 	if (equaled == 1){
-		constantCe();
+		constantCe();//screen cleaning function
 		equaled = 0;
 	}
 }
-function emptyTest(){
+function emptyTest(){//check screen before running calOutput function
     if (document.getElementById("display").value == ""){
-        document.getElementById("display").value = "EMPTY ERROR";
-        equaled = 1;
+        document.getElementById("display").value = "EMPTY ERROR";//display screen will display ERROR info when nothing was inputted
     }
 }
-
-function writeInfo(chars){
+function writeInfo(chars){//chars is the info you want to input
+    //info must inside a quotation marks
+    //write info into the display input box
 	equalTest();
-	char = chars;
-	document.getElementById("display").value = document.getElementById("display").value + char;
+	char = chars;//assign the info into a var call char
+	document.getElementById("display").value = document.getElementById("display").value + char;//write the info into the end of the screen
 }
-function constantCe(){
+function constantCe(){//clear the display and equation display box
 	document.getElementById("display").value = "";
 	document.getElementById("equation").value = "";
 }
-function functionLogE(){
+function functionLogE(){//a log(base e) calculation
+    emptyTest();
     var display = document.getElementById("display").value;
-	document.getElementById("equation").value = "ln" + "(" + display + ")=";
-	document.getElementById("display").value = Math.log(eval(display));
+	document.getElementById("equation").value = "ln" + "(" + display + ")=";//write info between two brackets
+	document.getElementById("display").value = Math.log(eval(display));//using internal Math object
+    equaled = 1;
 }
-function functionLogTen(){
+function functionLogTen(){//a log(base 10) calculation
     emptyTest();
     var display = document.getElementById("display").value;
 	document.getElementById("equation").value = "log" + "(" + display + ")=";
     document.getElementById("display").value = Math.log(eval(display))/Math.log(10);
+    equaled = 1;
 }
-function functionSqrt(){
+function functionSqrt(){//a sqrt calculation
     emptyTest();
     var display = document.getElementById("display").value;
     document.getElementById("equation").value = "√" + "(" + display + ")=";
     document.getElementById("display").value = Math.sqrt(eval(display));
+    equaled = 1;
 }
-function functionSin(){
+function functionSin(){//a sin calculation
     emptyTest();
     var display = document.getElementById("display").value;
     document.getElementById("equation").value = "sin" + "(" + display + ")=";
     document.getElementById("display").value = Math.sin(eval(display));
+    equaled = 1;
 }
-function functionCos(){
+function functionCos(){//a cos calculation
     emptyTest();
     var display = document.getElementById("display").value;
     document.getElementById("equation").value = "cos" + "(" + display + ")=";
     document.getElementById("display").value = Math.cos(eval(display));
+    equaled = 1;
 }
-function functionTan(){
+function functionTan(){//a tan calculation
     emptyTest();
     var display = document.getElementById("display").value;
     document.getElementById("equation").value = "tan" + "(" + display + ")=";
     document.getElementById("display").value = Math.tan(eval(display));
+    equaled = 1;
 }
-function functionFactor(){
+function functionFactor(){//a factor calculation
     emptyTest();
     var display = document.getElementById("display").value;
     var output = 1;
-    if (eval(display)%1 === 0){
-    	for (var i=1; i<=eval(display); i++){
+    if (eval(display)%1 === 0){//integer check
+    	for (var i=1; i<=eval(display); i=i+1){//a factor computations using i and multiplication itself
 			output = output * i;
 		}
 	}
     document.getElementById("equation").value ="(" + display + ")!=";
     document.getElementById("display").value = output;
+    equaled = 1;
 }
-function functionTwoTimes(){
+function functionTwoTimes(){//square calculation
     emptyTest();
     var display = document.getElementById("display").value;
     document.getElementById("equation").value ="(" + display + ")^2=";
     document.getElementById("display").value = eval(display*display);
+    equaled = 1;
 }
-function functionXTimes(){
+function functionXTimes(){//power calculation
     emptyTest();
     var display = document.getElementById("display").value;
-    var times=prompt("y=","");
+    var times=prompt("y=","");//multiplication itself for y times
     var output = 1;
-    for (var i=1; i<=times; i++){
+    for (var i=1; i<=times; i=i+1){
         output = output * display;
     }
     document.getElementById("equation").value ="(" + display + ")^" + times + "=";
     document.getElementById("display").value = output;
+    equaled = 1;
 }
 function calOutput(){
 	equaled = 1;
     emptyTest();
 	var display = document.getElementById("display").value;
 	if (display != ""){
-		document.getElementById("equation").value = display+"=";
-		document.getElementById("display").value = eval(display);
+		document.getElementById("equation").value = display+"=";//write the display screen's info to the sub screen
+		document.getElementById("display").value = eval(display);//evaluate the answer
 	}
 }
 function delLast(){
     var display = document.getElementById("display").value;
-    document.getElementById("display").value = display.substring(0,display.length-1);
+    document.getElementById("display").value = display.substring(0,display.length-1);//delete the last char from the the display screen
+    //aka keep the first char to the (last_index_char)-1 char
 }
