@@ -1,52 +1,75 @@
-.container{
-    padding:50px 0px 0px 0px;
-    margin:0px 0px 0px 0px;
-    width: 100%;
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-.btn-length{
-    width: 100px;
-    margin: 5px;
-    color: #000000;
+.cal{
+    box-shadow: 0px 0px 15px #9b9b9b;
+    width:400px;
+    position: absolute;
+    text-align: center;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
-.eqright{
-    vertical-align: middle;
-    text-align: right;
-}
-.equa{
-    color: gray;
-}
-.screen{
-    border-style: none;
-    width: 100%;
-    font-size: 30px;
-    border-bottom-color: #000000;
-    border-bottom: 1px solid;
-    padding:0px 30px 0px 30px;
+.btngroup{
+    width:400px;
+    height:400px;
 }
 .subscreen{
+    padding: 5px;
+    width:370px;
+    height:25px;
     border-style: none;
-    width: 100%;
-    font-size: 21px;
-    border-bottom-color: #000000;
-    border-bottom: 1px solid;
-    padding:0px 30px 0px 30px;
+    text-align: right;
+    font-size: 25px;
+    color: #a1a1a1;
 }
-.middle{
-    width:500px;
-    height:600px;
-    box-shadow: 0px 0px 15px #595959;
-    margin: auto;
-}
-.number-btn{
-    padding-top: 20px;
-}
-.function-btn{
+.screen{
+    width:370px;
+    padding: 5px;
+    padding: 5px;
+    height:75px;
+    border-style: none;
+    text-align: right;
+    font-size: 75px;
+    color: #ff9900;
 }
 .btn{
-    background-image: -webkit-linear-gradient(top,#d6d6d6,#d0d0d0);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+    width:100px;
+    height:50px;
+    font-size: 25px;
+    border-style: none;
 }
+.btn{
+    background-color: #f0f0f0;
+    color: #000000;
+}
+.btn:hover{
+    background: linear-gradient(180deg, #006699, #0F7DC2);
+    color: #ffffff;
+}
+.btn:active{
+    background: linear-gradient(180deg, #ff9900, #ff7d2a);
+    color: #ffffff;
+}
+.dark{
+    background-color: #fafafa;
+    color: #000000;
+}
+.blue{
+    background-color: #146eb4;
+    color: #ffffff;
+}
+.org{
+    background-color: #ff9900;
+    color: #ffffff;
+}
+
 .copyright{
-    margin-top: 50px;
-    text-align: center;
-    color: #595959;
+    height: 50px;
+    line-height: 50px;
 }
