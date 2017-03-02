@@ -148,9 +148,11 @@ function writeOperatorInfo(chars){
 }
 function docuWrite(){//calculate the sum of “1+2+3+…+100”
     var sum = 0;
-    for (var i=1; i<= 100; i += 1){
+    for (var i=1; i<= 100; i += 1){//for loop to calculate
         sum = sum + i;
     }
-    document.write(sum);//output sum
+    document.getElementById("equation").value = 'sum of "1+2+3+…+100"' ;
+    document.getElementById("display").value = sum;
     return sum;
+    equaled = 1;
 }
