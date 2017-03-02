@@ -8,6 +8,7 @@ function equalTest(){//if =sign was clicked, all screen will clean before you st
 	if (equaled == 1){
 		constantCe();//screen cleaning function
 		equaled = 0;
+		dot = 0;
 	}
 }
 function emptyTest(){//check screen before running calOutput function
@@ -107,7 +108,6 @@ function functionXTimes(){//power calculation
     document.getElementById("equation").value ="(" + display + ")^" + times + "=";
     document.getElementById("display").value = output;
     equaled = 1;
-    dot = 0;
 }
 function calOutput(){
 	equaled = 1;
@@ -144,4 +144,5 @@ function writeOperatorInfo(chars){
     }else{
         document.getElementById("display").value = document.getElementById("display").value + char;//normally write the operator
     }
+    dot = 0;
 }
