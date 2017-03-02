@@ -77,3 +77,6 @@ body{
     height: 50px;/*center align for copyright info*/
     line-height: 50px;
 }
+.btn-long{
+    font-size: 20px;
+}

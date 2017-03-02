@@ -144,5 +144,13 @@ function writeOperatorInfo(chars){
     }else{
         document.getElementById("display").value = document.getElementById("display").value + char;//normally write the operator
     }
-    dot = 0;
+    dot = 0;//reset the dot value
+}
+function docuWrite(){//calculate the sum of “1+2+3+…+100”
+    var sum = 0;
+    for (var i=1; i<= 100; i += 1){
+        sum = sum + i;
+    }
+    document.write(sum);//output sum
+    return sum;
 }
