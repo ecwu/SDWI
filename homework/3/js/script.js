@@ -3,6 +3,7 @@ e = Math.E;
 //assign two math constant
 equaled = 0;//a variable for equal sign click test
 //assign a var to clean the screen
+dot = 0;//a variable for multi dots test
 function equalTest(){//if =sign was clicked, all screen will clean before you start a new calculation
 	if (equaled == 1){
 		constantCe();//screen cleaning function
@@ -19,6 +20,10 @@ function writeInfo(chars){//chars is the info you want to input
     //write info into the display input box
 	equalTest();
 	char = chars;//assign the info into a var call char
+    if (char == "+" || char == "-" || char == "*" || char == "/"){
+        writeOperationInfo(chars);
+        return;
+    }
 	document.getElementById("display").value = document.getElementById("display").value + char;//write the info into the end of the screen
 }
 function constantCe(){//clear the display and equation display box
@@ -92,12 +97,17 @@ function functionXTimes(){//power calculation
     var display = document.getElementById("display").value;
     var times=prompt("y=","");//multiplication itself for y times
     var output = 1;
+    if (times == ""){
+        alert("You have to input a power number")
+        return;
+    }
     for (var i=1; i<=times; i=i+1){
         output = output * display;
     }
     document.getElementById("equation").value ="(" + display + ")^" + times + "=";
     document.getElementById("display").value = output;
     equaled = 1;
+    dot = 0;
 }
 function calOutput(){
 	equaled = 1;
@@ -112,4 +122,22 @@ function delLast(){
     var display = document.getElementById("display").value;
     document.getElementById("display").value = display.substring(0,display.length-1);//delete the last char from the the display screen
     //aka keep the first char to the (last_index_char)-1 char
+}
+function multiDotTest(){
+    if (dot == 0){//original dot value is 0 and plus one when a dot was print on the screen
+        dot += 1;
+        writeInfo('.');//run the write function
+    }else{
+        alert("Multi Dot is not allow!")//a alert windows is there are multi dots
+    }
+}
+function writeOperationInfo(chars){
+    var display = document.getElementById("display").value;
+    var lastchar = display.substring(display.length-1,display.length);
+    var char = chars;
+    if (lastchar == "+" || lastchar == "-" || lastchar == "*" || lastchar == "/"){
+        document.getElementById("display").value = display.substring(0,display.length-1) + char;
+    }else{
+        document.getElementById("display").value = document.getElementById("display").value + char;
+    }
 }
