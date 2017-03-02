@@ -20,9 +20,9 @@ function writeInfo(chars){//chars is the info you want to input
     //write info into the display input box
 	equalTest();
 	char = chars;//assign the info into a var call char
-    if (char == "+" || char == "-" || char == "*" || char == "/"){
-        writeOperationInfo(chars);
-        return;
+    if (char == "+" || char == "-" || char == "*" || char == "/"){//check if you want to input an operator
+        writeOperatorInfo(chars);//check if the last char is an operator
+        return;//stop the writing function
     }
 	document.getElementById("display").value = document.getElementById("display").value + char;//write the info into the end of the screen
 }
@@ -77,7 +77,7 @@ function functionFactor(){//a factor calculation
     var display = document.getElementById("display").value;
     var output = 1;
     if (eval(display)%1 === 0){//integer check
-    	for (var i=1; i<=eval(display); i=i+1){//a factor computations using i and multiplication itself
+    	for (var i=1; i<=eval(display); i += 1){//a factor computations using i and multiplication itself
 			output = output * i;
 		}
 	}
@@ -101,7 +101,7 @@ function functionXTimes(){//power calculation
         alert("You have to input a power number")
         return;
     }
-    for (var i=1; i<=times; i=i+1){
+    for (var i=1; i<=times; i += 1){
         output = output * display;
     }
     document.getElementById("equation").value ="(" + display + ")^" + times + "=";
@@ -131,13 +131,17 @@ function multiDotTest(){
         alert("Multi Dot is not allow!")//a alert windows is there are multi dots
     }
 }
-function writeOperationInfo(chars){
+function writeOperatorInfo(chars){
     var display = document.getElementById("display").value;
-    var lastchar = display.substring(display.length-1,display.length);
+    var lastchar = display.substring(display.length-1,display.length);//get the last char
     var char = chars;
-    if (lastchar == "+" || lastchar == "-" || lastchar == "*" || lastchar == "/"){
-        document.getElementById("display").value = display.substring(0,display.length-1) + char;
+    if (display.length == 0){
+        alert("Operator cant be the first char");
+        return;
+    }
+    if (lastchar == "+" || lastchar == "-" || lastchar == "*" || lastchar == "/"){//check the last char
+        document.getElementById("display").value = display.substring(0,display.length-1) + char;//change the operator
     }else{
-        document.getElementById("display").value = document.getElementById("display").value + char;
+        document.getElementById("display").value = document.getElementById("display").value + char;//normally write the operator
     }
 }
