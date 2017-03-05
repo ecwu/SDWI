@@ -4,6 +4,7 @@ e = Math.E;
 equaled = 0;//a variable for equal sign click test
 //assign a var to clean the screen
 dot = 0;//a variable for multi dots test
+resultarray = [];
 function equalTest(){//if =sign was clicked, all screen will clean before you start a new calculation
 	if (equaled == 1){
 		constantCe();//screen cleaning function
@@ -116,6 +117,7 @@ function calOutput(){
 	if (display != ""){
 		document.getElementById("equation").value = display+"=";//write the display screen's info to the sub screen
 		document.getElementById("display").value = eval(display);//evaluate the answer
+        resultarray.push(eval(display));
 	}
 }
 function delLast(){
