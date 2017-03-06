@@ -32,6 +32,8 @@ function writeInfo(chars){//chars is the info you want to input
 function constantCe(){//clear the display and equation display box
 	document.getElementById("display").value = "";
 	document.getElementById("equation").value = "";
+    equaled = 0;
+    dot = 0;
 }
 function functionLogE(){//a log(base e) calculation
     emptyTest();
