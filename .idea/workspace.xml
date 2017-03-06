@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2aab88-8d4a-4ada-8182-6072db87499e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/1/css/style.css" afterPath="$PROJECT_DIR$/homework/1/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/1/myhome.html" afterPath="$PROJECT_DIR$/homework/1/myhome.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/3/index.html" afterPath="$PROJECT_DIR$/homework/3/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/3/js/script.js" afterPath="$PROJECT_DIR$/homework/3/js/script.js" />
     </list>
@@ -27,21 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework/3/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+            <state relative-caret-position="481">
+              <caret line="136" column="20" lean-forward="false" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework/3/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="199" column="145" lean-forward="false" selection-start-line="199" selection-start-column="145" selection-end-line="199" selection-end-column="145" />
+            <state relative-caret-position="3162">
+              <caret line="186" column="34" lean-forward="true" selection-start-line="186" selection-start-column="34" selection-end-line="186" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -114,8 +111,8 @@
         <option value="$PROJECT_DIR$/homework/3/css/style.css" />
         <option value="$PROJECT_DIR$/homework/1/css/style.css" />
         <option value="$PROJECT_DIR$/homework/1/myhome.html" />
-        <option value="$PROJECT_DIR$/homework/3/index.html" />
         <option value="$PROJECT_DIR$/homework/3/js/script.js" />
+        <option value="$PROJECT_DIR$/homework/3/index.html" />
       </list>
     </option>
   </component>
@@ -338,7 +335,7 @@
       <workItem from="1488449044389" duration="9290000" />
       <workItem from="1488459561976" duration="110000" />
       <workItem from="1488729701806" duration="745000" />
-      <workItem from="1488805857839" duration="3419000" />
+      <workItem from="1488805857839" duration="4735000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1487214280541</created>
@@ -351,7 +348,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67205000" />
+    <option name="totallyTimeSpent" value="68521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -710,18 +707,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework/3/index.html">
+    <entry file="file://$PROJECT_DIR$/homework/3/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        <state relative-caret-position="3162">
+          <caret line="186" column="34" lean-forward="true" selection-start-line="186" selection-start-column="34" selection-end-line="186" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework/3/js/script.js">
+    <entry file="file://$PROJECT_DIR$/homework/3/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="199" column="145" lean-forward="false" selection-start-line="199" selection-start-column="145" selection-end-line="199" selection-end-column="145" />
+        <state relative-caret-position="481">
+          <caret line="136" column="20" lean-forward="false" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
           <folding />
         </state>
       </provider>
