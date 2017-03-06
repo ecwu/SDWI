@@ -97,34 +97,34 @@ function hotKey(){
     if(event.keyCode==38){
         insertNum();
     }
-    if(event.keyCode==96){// Key Pad 0
+    if(event.keyCode==96 || event.keyCode==48){// Key Pad 0
         writeInfo(0);
     }
-    if(event.keyCode==97){// Key Pad 1
+    if(event.keyCode==97 || event.keyCode==49){// Key Pad 1
         writeInfo(1);
     }
-    if(event.keyCode==98){// Key Pad 2
+    if(event.keyCode==98 || event.keyCode==50){// Key Pad 2
         writeInfo(2);
     }
-    if(event.keyCode==99){// Key Pad 3
+    if(event.keyCode==99 || event.keyCode==51){// Key Pad 3
         writeInfo(3);
     }
-    if(event.keyCode==100){// Key Pad 4
+    if(event.keyCode==100 || event.keyCode==52){// Key Pad 4
         writeInfo(4);
     }
-    if(event.keyCode==101){// Key Pad 5
+    if(event.keyCode==101 || event.keyCode==53){// Key Pad 5
         writeInfo(5);
     }
-    if(event.keyCode==102){// Key Pad 6
+    if(event.keyCode==102 || event.keyCode==54){// Key Pad 6
         writeInfo(6);
     }
-    if(event.keyCode==103){// Key Pad 7
+    if(event.keyCode==103 || event.keyCode==55){// Key Pad 7
         writeInfo(7);
     }
-    if(event.keyCode==104){// Key Pad 8
+    if(event.keyCode==104 || event.keyCode==56){// Key Pad 8
         writeInfo(8);
     }
-    if(event.keyCode==105){// Key Pad 9
+    if(event.keyCode==105 || event.keyCode==57){// Key Pad 9
         writeInfo(9);
     }
     if(event.keyCode==106){// Key Pad Multiply
@@ -145,11 +145,8 @@ function hotKey(){
     if(event.keyCode==111){// Key Pad Divide
         writeInfo('/');
     }
-    if(event.keyCode==112){// Key Pad Divide
-        alert("1");
-    }
-    if(event.keyCode==124){// Key Pad Divide
-        alert("2");
+    if(event.keyCode==8){// Key Pad Divide
+        delLast();
     }
 }
 </script>

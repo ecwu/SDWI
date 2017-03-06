@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b2aab88-8d4a-4ada-8182-6072db87499e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homework/3/index.html" afterPath="$PROJECT_DIR$/homework/3/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/homework/3/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="123" column="25" lean-forward="false" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
+            <state relative-caret-position="603">
+              <caret line="148" column="18" lean-forward="false" selection-start-line="148" selection-start-column="18" selection-end-line="148" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -334,7 +335,7 @@
       <workItem from="1488449044389" duration="9290000" />
       <workItem from="1488459561976" duration="110000" />
       <workItem from="1488729701806" duration="745000" />
-      <workItem from="1488805857839" duration="5338000" />
+      <workItem from="1488805857839" duration="6080000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1487214280541</created>
@@ -347,7 +348,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69124000" />
+    <option name="totallyTimeSpent" value="69866000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -716,8 +717,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homework/3/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="123" column="25" lean-forward="false" selection-start-line="123" selection-start-column="25" selection-end-line="123" selection-end-column="25" />
+        <state relative-caret-position="603">
+          <caret line="148" column="18" lean-forward="false" selection-start-line="148" selection-start-column="18" selection-end-line="148" selection-end-column="18" />
           <folding />
         </state>
       </provider>
