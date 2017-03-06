@@ -6,7 +6,7 @@
     <!-- external CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body onkeydown="hotKey()">
     <div class="container">
         <!--main container width set no padding and margin-->
         <div class="cal">
@@ -85,5 +85,18 @@
     try {
     window.console && window.console.log && (console.log("Website Made by Zhenghao Wu"))
 } catch (e) {}
+
+function hotKey(){
+    var e=event.srcElement;
+    if(event.keyCode==39){
+        resultSelector(0);
+    }
+    if(event.keyCode==37){
+        resultSelector(1);
+    }
+    if(event.keyCode==38){
+        insertNum();
+    }
+}
 </script>
 </html>

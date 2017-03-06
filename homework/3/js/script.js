@@ -5,6 +5,7 @@ equaled = 0;//a variable for equal sign click test
 //assign a var to clean the screen
 dot = 0;//a variable for multi dots test
 resultarray = [];
+arrayorder = 0;//var for result array search
 function equalTest(){//if =sign was clicked, all screen will clean before you start a new calculation
 	if (equaled == 1){
 		constantCe();//screen cleaning function
@@ -117,7 +118,7 @@ function calOutput(){
 	if (display != ""){
 		document.getElementById("equation").value = display+"=";//write the display screen's info to the sub screen
 		document.getElementById("display").value = eval(display);//evaluate the answer
-        resultarray.push(eval(display));
+        resultarray.push(eval(display));//write the info information to the array
 	}
 }
 function delLast(){
@@ -157,4 +158,47 @@ function docuWrite(){//calculate the sum of “1+2+3+…+100”
     document.getElementById("display").value = sum;
     return sum;
     equaled = 1;
+}
+function resultSelector(operation){//for find the previous result
+    switch(operation){
+        case 0:
+            arrayup();//next one
+        break;
+        case 1:
+            arraydown();//last one
+        break;
+    }
+}
+
+function arrayup(){
+    arrayorder += 1;
+    var numorder = arrayorder + 1;
+    if (resultarray[arrayorder] != undefined){
+        document.getElementById("equation").value = "No." + numorder + " result is:";
+        document.getElementById("display").value = resultarray[arrayorder];
+    }else{
+        alert("No." + arrayorder + " result is the last result");//alert if there is no next result
+    }
+    equaled = 1;
+}
+
+function arraydown(){
+    arrayorder -= 1;
+    var numorder = arrayorder + 1;
+    if (resultarray[arrayorder] != undefined){
+        document.getElementById("equation").value = "No." + numorder + " result is:";
+        document.getElementById("display").value = resultarray[arrayorder];
+    }else{
+        alert("No.1 result is the first result");//alert if there is no result above
+    }
+    equaled = 1;
+}
+
+function insertNum(){
+    equalTest();
+    if (resultarray[arrayorder] != undefined){
+    document.getElementById("display").value = document.getElementById("display").value + resultarray[arrayorder];//add the result to the display
+    }else{
+        alert("Insert ERROR");
+    }
 }
