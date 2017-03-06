@@ -149,14 +149,14 @@ function writeOperatorInfo(chars){
     }
     dot = 0;//reset the dot value
 }
-function docuWrite(){//calculate the sum of “1+2+3+…+100”
+function sumForFun(){//calculate the sum of “1+2+3+…+100”
     var sum = 0;
     for (var i=1; i<= 100; i += 1){//for loop to calculate
         sum = sum + i;
     }
     document.getElementById("equation").value = 'sum of "1+2+3+…+100"' ;
     document.getElementById("display").value = sum;
-    return sum;
+    resultarray.push(sum);
     equaled = 1;
 }
 function resultSelector(operation){//for find the previous result
