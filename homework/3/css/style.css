@@ -17,7 +17,7 @@ body{
 }
 .btngroup{
     width:500px;
-    height:400px;
+    height:450px;
     /*set the width and height for the btn group*/
 }
 .subscreen{
@@ -79,4 +79,15 @@ body{
 }
 .btn-long{
     font-size: 20px;
+}
+.text{
+    transition: background 0.2s;/*a little background transition effect*/
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    float: left;/*delete btn padding*/
+    width:100%;/*4 btn a col*/
+    height:50px;/*text vertical align*/
+    line-height: 50px;
+    font-size: 15px;
+    border-style: none;
 }
