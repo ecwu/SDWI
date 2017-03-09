@@ -56,14 +56,14 @@ function seatSelect(seatid){
     }
 }
 function seatArrayInfoChange(type,id){
-    var seatId = id;
+    var seatId = id
     var seatNumber = seatId.substring(4,seatId.length);
     var j = (seatNumber%6);
     var i = (seatNumber-j)/6;
     if (type){
-        seats[i].splice(j-1,1,true)
+        seats[i-1].splice(j-1,1,true)
     }else{
-        seats[i].splice(j-1,1,false)
+        seats[i-1].splice(j-1,1,false)
     }
 }
 function seatSubmit(){
@@ -77,7 +77,10 @@ function seatSubmit(){
         if (j == 0){
             j = 6;
         }
-        seatName.push(rowName[i]+colName[j-1]);
+        if (num == 60){
+            i -= 1;
+        }
+        seatName.push(rowName[i-1]+colName[j-1]);
     }
     if (confirm("You are Selecting: "+ seatName + "\nAre you sure?")){
         seatInit()
