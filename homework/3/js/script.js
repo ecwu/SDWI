@@ -197,11 +197,11 @@ function arraydown(){
 }
 
 function insertNum(){
-    equalTest();
     var lastnum = resultarray.length - 1;
+    equalTest();
     if (resultarray[arrayorder] != undefined){
-        document.getElementById("display").value = document.getElementById("display").value + resultarray[arrayorder];//add the result to the display
+        document.getElementById("display").value = resultarray[arrayorder];//add the result to the display
     }else{
-        document.getElementById("display").value = document.getElementById("display").value + resultarray[lastnum];//add the latest result to the display
+        document.getElementById("display").value = resultarray[lastnum];//add the latest result to the display
     }
 }
