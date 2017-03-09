@@ -83,3 +83,19 @@ function seatSubmit(){
         seatInit()
     }
 }
+
+function seatReset(){
+    seats=[[false,false,false,false,false,false],
+        [false,false,false,false,false,false],
+        [true,true,true,true,true,true],
+        [true,true,true,true,true,true],
+        [true,true,true,true,true,true],
+        [true,true,true,true,true,true],
+        [true,true,true,true,true,true],
+        [false,false,false,false,false,false],
+        [true,true,true,true,true,true],
+        [true,true,true,true,true,true],
+        [true,true,true,true,true,true],
+        [true,true,true,true,true,true]];
+    seatInit();
+}
