@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Seats Select System V1.0 | CST AIRLINE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="seatInit()">
+<div class="container">
+    <div class="heading">
+        <p >OSSS <span class="version">V1.0</span> | CST AIRLINE</p>
+    </div>
+    <div class="seats">
+        <div class="row">
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat1" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat2" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat3" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat4" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat5" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat6" onclick="seatSelect(id)"></div>
+        </div>
+        <div class="row">
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat7" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat8" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat9" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat10" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat11" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat12" onclick="seatSelect(id)"></div>
+        </div>
+        <div class="row">
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat13" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat14" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat15" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat16" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat17" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat18" onclick="seatSelect(id)"></div>
+        </div>
+        <div class="row">
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat19" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat20" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat21" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat22" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat23" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat24" onclick="seatSelect(id)"></div>
+        </div>
+        <div class="row">
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat25" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat26" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat27" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat28" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat29" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat30" onclick="seatSelect(id)"></div>
+        </div>
+        <div class="row">
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat31" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat32" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat33" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat34" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat35" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat36" onclick="seatSelect(id)"></div>
+        </div>
+        <div class="row">
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat37" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat38" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat39" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat40" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat41" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat42" onclick="seatSelect(id)"></div>
+        </div>
+        <div class="row">
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat43" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat44" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat45" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" src="img/emergency.png"></div>
+            <div class="seat"><img class="seatimg" src="img/emergency.png"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat46" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat47" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat48" onclick="seatSelect(id)"></div>
+        </div>
+        <div class="row">
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat49" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat50" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat51" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat52" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat53" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat54" onclick="seatSelect(id)"></div>
+        </div>
+        <div class="row">
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat55" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat56" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat57" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat58" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat59" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat60" onclick="seatSelect(id)"></div>
+        </div>
+        <div class="row">
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat61" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat62" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat63" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat64" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat65" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat66" onclick="seatSelect(id)"></div>
+        </div>
+        <div class="row">
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat67" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat68" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat69" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" src="img/aisle.png"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat70" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat71" onclick="seatSelect(id)"></div>
+            <div class="seat"><img class="seatimg" alt="as" src="img/normal_seats.png" id="seat72" onclick="seatSelect(id)"></div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script><!-- js script -->
+</html>

@@ -1,0 +1,32 @@
+body{
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.container{
+    padding: 0% 20% 0% 20%;
+
+}
+.heading{
+    font-size: 25px;
+    border-bottom: 1px solid;
+    padding: 0px 15px 0px 15px;
+}
+.version{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0px 5px 2px 5px;
+}
+.row{
+    max-width: 100%;
+}
+.seat{
+    width:12.5%;
+    text-align: center;
+    display: inline-block;
+    float: left;
+}
+.seatimg{
+    width:100%;
+    float: left;
+}
