@@ -4,7 +4,7 @@ body{
     margin: 0px 0px 0px 0px;
 }
 table{
-    font-size: 25px;
+    font-size: 1.5em;
     text-align: center;
 }
 th{
@@ -18,7 +18,7 @@ td{
 
 }
 .heading{
-    font-size: 25px;
+    font-size: 1.5em;
     border-bottom: 1px solid;
     padding: 0px 15px 0px 15px;
 }
@@ -38,4 +38,7 @@ td{
     width:50%;
     height: 32px;
     font-size:25px ;
+}
+.footer{
+    text-align: center;
 }

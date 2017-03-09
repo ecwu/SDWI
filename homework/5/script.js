@@ -89,6 +89,8 @@ function seatSubmit(){
     if (confirm("You are Selecting: "+ seatName + "\nAre you sure?")){
         seatInit()
     }
+    selectSeats = 0;
+    submit=[];
 }
 
 function seatReset(){
