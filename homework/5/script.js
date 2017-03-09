@@ -98,4 +98,5 @@ function seatReset(){
         [true,true,true,true,true,true],
         [true,true,true,true,true,true]];
     seatInit();
+    selectSeats = 0;
 }
