@@ -12,6 +12,7 @@ var seats=[[false,false,false,false,false,false],
     [true,true,true,true,true,true],
     [true,true,true,true,true,true]];
 var submit=[];
+var sideArray=["18","24","30","36","42","48","54","60","66","72"];
 function seatInit(){
     var postion = 0;
     for (var i = 0; i < seats.length; i += 1){
@@ -56,14 +57,17 @@ function seatSelect(seatid){
     }
 }
 function seatArrayInfoChange(type,id){
-    var seatId = id
+    var seatId = id;
     var seatNumber = seatId.substring(4,seatId.length);
     var j = (seatNumber%6);
     var i = (seatNumber-j)/6;
+    if (sideArray.indexOf(seatNumber) != -1){
+        i -= 1;
+    }
     if (type){
-        seats[i-1].splice(j-1,1,true)
+        seats[i].splice(j-1,1,true)
     }else{
-        seats[i-1].splice(j-1,1,false)
+        seats[i].splice(j-1,1,false)
     }
 }
 function seatSubmit(){
@@ -74,13 +78,13 @@ function seatSubmit(){
         var num = submit[a];
         var j = (num%6);
         var i = (num-j)/6;
+        if (sideArray.indexOf(num) != -1){
+            i -= 1;
+        }
         if (j == 0){
             j = 6;
         }
-        if (num == 60){
-            i -= 1;
-        }
-        seatName.push(rowName[i-1]+colName[j-1]);
+        seatName.push(rowName[i]+colName[j-1]);
     }
     if (confirm("You are Selecting: "+ seatName + "\nAre you sure?")){
         seatInit()
