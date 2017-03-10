@@ -51,7 +51,7 @@ function seatSelect(seatid){
             document.getElementById(seatid).alt = "as";
             selectSeats -= 1;//seat counter minus 1
             seatArrayInfoChange(true,seatid);//change seats array info
-            var index = submit.indexOf("seatId");//get the elements index in submit array
+            var index = submit.indexOf(seatId);//get the elements index in submit array
             submit.splice(index,1);//del that element in the array
         }
     }
