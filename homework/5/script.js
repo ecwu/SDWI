@@ -86,8 +86,10 @@ function seatSubmit(){
         }
         seatName.push(rowName[i]+colName[j-1]);//add the seat name([Seat row number]+[Seat Col Name])to the final output array
     }
-    if (confirm("You are Selecting: "+ seatName + "\nAre you sure?")){//a confirm windows
-        seatInit()//change the selected seats to occupied seats
+    if (confirm("You are Selecting: "+ seatName + "\nAre you sure?")){//a confirm window
+        seatInit();//change the selected seats to occupied seats
+    }else{//if not click the confirm button
+        return -1;//stop the function
     }
     selectSeats = 0;
     submit=[];//reset the seats counted and submit array

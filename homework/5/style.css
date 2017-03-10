@@ -48,3 +48,9 @@ td{
     padding-top: 15px;
     text-align: center;
 }
+.seatinfoimg{/*for img info*/
+    width:50px;/*img width*/
+    font-size: 0.5em;
+    vertical-align:middle;
+    display: inline-block;
+}
