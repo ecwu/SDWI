@@ -14,7 +14,7 @@ td{
     width:10%;
 }
 .container{
-    padding: 0% 30% 0% 30%;/*original padding info*/
+    padding: 0% 20% 0% 20%;/*original padding info*/
 }
 @media(max-width: 900px){
     .container{/*adaptable padding base on width info*/
