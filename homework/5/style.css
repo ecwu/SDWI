@@ -1,49 +1,50 @@
 body{
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    padding: 20px 0px 50px 0px;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;/*fonts family*/
+    padding: 20px 0px 20px 0px;/*padding for top and button*/
     margin: 0px 0px 0px 0px;
 }
 table{
-    font-size: 1.5em;
+    font-size: 1.5em;/*adaptable table font size*/
     text-align: center;
 }
 th{
-    width:10%;
+    width:10%;/*set every table box width*/
 }
 td{
     width:10%;
 }
 .container{
-    padding: 0% 30% 0% 30%;
+    padding: 0% 30% 0% 30%;/*original padding info*/
 }
 @media(max-width: 900px){
-    .container{
+    .container{/*adaptable padding base on width info*/
         padding-right:20px;
         padding-left:20px;
     }
 }
 .heading{
     font-size: 1.5em;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid;/*buttom border line*/
     padding: 0px 15px 0px 15px;
 }
 .htext{
     margin:0px 0px 25px 0px;
 }
 .version{
-    padding: 0px -2px 1px 5px;
+    padding: 0px -2px 1px 5px;/*sup version number*/
     font-size: 12px;
 }
-.seatimg{
+.seatimg{/*style in every table d img*/
     width:100%;
     float: left;
     display: inline-block;
 }
-.submit{
+.submit{/*submit and reset button style*/
     width:50%;
     height: 32px;
     font-size:25px ;
 }
 .footer{
+    padding-top: 15px;
     text-align: center;
 }
