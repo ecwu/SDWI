@@ -96,18 +96,18 @@ function seatSubmit(){
 }
 
 function seatReset(){//reset the page
-    seats=[[false,false,false,false,false,false],
-        [false,false,false,false,false,false],
-        [true,true,true,true,true,true],
-        [true,true,true,true,true,true],
-        [true,true,true,true,true,true],
-        [true,true,true,true,true,true],
-        [true,true,true,true,true,true],
-        [false,false,false,false,false,false],
-        [true,true,true,true,true,true],
-        [true,true,true,true,true,true],
-        [true,true,true,true,true,true],
-        [true,true,true,true,true,true]];//reset the seats array info
+    seats=[[true,true,true,true,true,true],
+    [true,true,true,true,true,true],
+    [true,true,true,true,true,true],
+    [true,true,true,true,true,true],
+    [true,true,true,true,true,true],
+    [true,true,true,true,true,true],
+    [true,true,true,true,true,true],
+    [true,true,true,true,true,true],
+    [true,true,true,true,true,true],
+    [true,true,true,true,true,true],
+    [true,true,true,true,true,true],
+    [true,true,true,true,true,true]];//reset the seats array info
     seatInit();
     selectSeats = 0;
     submit=[];
