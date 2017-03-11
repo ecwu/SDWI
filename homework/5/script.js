@@ -1,17 +1,17 @@
-var seats=[[false,false,false,false,false,false],
-    [false,false,false,false,false,false],
+var seats=[[true,true,true,true,true,true],
     [true,true,true,true,true,true],
     [true,true,true,true,true,true],
     [true,true,true,true,true,true],
     [true,true,true,true,true,true],
     [true,true,true,true,true,true],
-    [false,false,false,false,false,false],
+    [true,true,true,true,true,true],
+    [true,true,true,true,true,true],
     [true,true,true,true,true,true],
     [true,true,true,true,true,true],
     [true,true,true,true,true,true],
     [true,true,true,true,true,true]];//seats array for photo change
 var submit=[];//array for saving the seats info
-var sideArray=["18","24","30","36","42","48","54","60","66","72"];//special side-seat number
+var sideArray=["6","12","18","24","30","36","42","48","54","60","66","72"];//special side-seat number
 var selectSeats = 0;//a selected seat(s) counter
 function seatInit(){//init seat info
     var postion = 0;
