@@ -1,15 +1,4 @@
-var seats=[[true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true]];//seats array for photo change
+var seats=[[true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true]];//seats array for photo change
 var submit=[];//array for saving the seats info
 var sideArray=["6","12","18","24","30","36","42","48","54","60","66","72"];//special side-seat number
 var selectSeats = 0;//a selected seat(s) counter
@@ -96,18 +85,7 @@ function seatSubmit(){
 }
 
 function seatReset(){//reset the page
-    seats=[[true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true],
-    [true,true,true,true,true,true]];//reset the seats array info
+    seats=[[true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true], [true,true,true,true,true,true]];//reset the seats array info
     seatInit();
     selectSeats = 0;
     submit=[];
