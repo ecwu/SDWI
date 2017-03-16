@@ -14,3 +14,7 @@ Software Development Workshop I
 ## Exercise Quicklink
 1. [Exercise I](https://ecwu.github.io/SDWI/exercise/1/index.html)
 `Finished`
+
+## ## Test Quicklink
+1. [Test 1](https://ecwu.github.io/SDWI/test/1/index.html)
+`Finished`
