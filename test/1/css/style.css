@@ -1,58 +1,56 @@
 body{
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    padding:0px 0px 0px 0px;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;/*Set standard fonts for the display*/
+    padding:0px 0px 0px 0px;/*Del the standard Padding and Margin*/
     margin:0px 0px 0px 0px;
-    background-color: #790073;
+    background-color: #ffffff;/*set background color to white*/
 }
-
 .leftHeading{
-    color: #dfca00;
+    margin:0em 0em 0em 1em;/*a left gap for the left side of the heading*/
+    color: #dfca00;/*a yellow heading*/
 }
-
+.btn{
+    width:10em;/*standardize the button width and button height*/
+    height:2.5em;
+    margin:10px;/*set a gap between different btn*/
+}
 .container{
-    margin:3% 10% 0% 10%;
-}
-
+    margin:1em 10% 1em 10%;/*a outside margin for the container*/
+}/*save a left and right gap*/
 .displayArea{
-    width:80%;
-    float: left;
+    width:75%;/*the width of the left area*/
+    float: left;/*make all the element inline*/
     display: inline-block;
-    background-color: #000000;
+    background-color: #000000;/*black ground in the requirement*/
+    padding:1em 1em 1em 1em;
 }
-
 .lightBulbArea{
     margin:50px auto;
 }
-
-.visibleLightBulb{
+.visibleLightBulb{/*visible light bulb style*/
     width:16%;
 }
-.invisibleLightBulb{
-    width:16%;
+.invisibleLightBulb{/*invisible light bulb style*/
+    width:15.5%;
     display: none;
 }
-
-.rightInfoArea{
+.rightInfoArea{/*the width of the right side*/
     width:20%;
     float: left;
     display: inline-block;
     background-color: #ffffff;
 }
-
 .rightHeading{
-    color: #df0014;
+    color: #df4547;
+    margin: 0px;
 }
-
-.informationArea{
+.informationArea{/*different background for different function area*/
     padding:15px;
-    background-color: #069e00;
+    background-color: #7cc952;
 }
-
-.controlArea{
+.controlArea{/*different background for different function area*/
     padding:15px;
-    background-color: #00099b;
+    background-color: #54b6dc;
 }
-
-.extraPointArea{
+.extraPointArea{/*different background for different function area*/
     padding:15px;
 }
