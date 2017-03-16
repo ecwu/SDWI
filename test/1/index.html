@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body onclick="bulbInit()">
+<div class="container">
+    <div class="displayArea">
+        <div class="leftHeading">
+            <h1>Display Area</h1>
+        </div>
+        <div class="lightBulbArea">
+            <img class="visibleLightBulb" id="light0" src="img/off.png" alt="off" onclick="lightSwitch(id);">
+            <img class="visibleLightBulb" id="light1" src="img/off.png" alt="off" onclick="lightSwitch(id);">
+            <img class="visibleLightBulb" id="light2" src="img/off.png" alt="off" onclick="lightSwitch(id);">
+            <img class="visibleLightBulb" id="light3" src="img/off.png" alt="off" onclick="lightSwitch(id);">
+            <img class="visibleLightBulb" id="light4" src="img/off.png" alt="off" onclick="lightSwitch(id);">
+            <img class="visibleLightBulb" id="light5" src="img/off.png" alt="off" onclick="lightSwitch(id);">
+            <img class="visibleLightBulb" id="light6" src="img/off.png" alt="off" onclick="lightSwitch(id);">
+            <img class="visibleLightBulb" id="light7" src="img/off.png" alt="off" onclick="lightSwitch(id);">
+            <img class="visibleLightBulb" id="light8" src="img/off.png" alt="off" onclick="lightSwitch(id);">
+            <img class="visibleLightBulb" id="light9" src="img/off.png" alt="off" onclick="lightSwitch(id);">
+            <img class="visibleLightBulb" id="light10" src="img/off.png" alt="off" onclick="lightSwitch(id);">
+            <img class="visibleLightBulb" id="light11" src="img/off.png" alt="off" onclick="lightSwitch(id);">
+        </div>
+    </div>
+    <div class="rightInfoArea">
+        <div class="informationArea">
+            <h1 class="rightHeading">Information Area</h1>
+            <input id="totalNum" type="text" readonly="readonly" value="Total Number of Lights: 12">
+            <input id="onLightNum" type="text" readonly="readonly" value="0 light is on">
+        </div>
+        <div class="controlArea">
+            <h1 class="rightHeading">Control Area</h1>
+            <input type="button" value="Lights On" onclick="turnAllOn()">
+            <input type="button" value="Lights Off" onclick="turnAllOff()">
+            <input type="button" value="Reduce One Light" onclick="lightAddAndMinus(2)">
+            <input type="button" value="Add One Light" onclick="lightAddAndMinus(1)">
+        </div>
+        <div class="extraPointArea">
+            <h1 class="rightHeading">Extra Points</h1>
+            <input type="button" value="Reset">
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/script.js" type="text/javascript"></script>
+</html>

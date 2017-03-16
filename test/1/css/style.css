@@ -1,0 +1,58 @@
+body{
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+    background-color: #790073;
+}
+
+.leftHeading{
+    color: #dfca00;
+}
+
+.container{
+    margin:3% 10% 0% 10%;
+}
+
+.displayArea{
+    width:80%;
+    float: left;
+    display: inline-block;
+    background-color: #000000;
+}
+
+.lightBulbArea{
+    margin:50px auto;
+}
+
+.visibleLightBulb{
+    width:16%;
+}
+.invisibleLightBulb{
+    width:16%;
+    display: none;
+}
+
+.rightInfoArea{
+    width:20%;
+    float: left;
+    display: inline-block;
+    background-color: #ffffff;
+}
+
+.rightHeading{
+    color: #df0014;
+}
+
+.informationArea{
+    padding:15px;
+    background-color: #069e00;
+}
+
+.controlArea{
+    padding:15px;
+    background-color: #00099b;
+}
+
+.extraPointArea{
+    padding:15px;
+}
