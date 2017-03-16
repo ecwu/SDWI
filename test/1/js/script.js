@@ -17,9 +17,9 @@ function bulbInit(){
     infoDisplay();
 }
 function bulbDisplayInit(){
-    for (var postion = 0; postion < bulbDisplay.length; postion += 1){
-        var bulbIdName = "light" + postion;
-        if (bulbDisplay[postion]) {
+    for (var bulbpostion = 0; bulbpostion < bulbDisplay.length; bulbpostion += 1){
+        var bulbIdName = "light" + bulbpostion;
+        if (bulbDisplay[bulbpostion]) {
             document.getElementById(bulbIdName).className = "visibleLightBulb";
         }else{
             document.getElementById(bulbIdName).className = "invisibleLightBulb";
@@ -47,12 +47,15 @@ function lightAddAndMinus(operation){
             if (bulbCounter == 12){
                 return 0;
             }
-            bulbDisplay.splice(parseInt(bulbIndex),1,true);
             bulbIndex += 1;
+            bulbDisplay.splice(parseInt(bulbIndex),1,true);
             bulbCounter += 1;
             bulbDisplayInit();
         break;
         case 2:
+            if (bulbCounter == 1){
+                return 0;
+            }
             bulbDisplay.splice(parseInt(bulbIndex),1,false);
             bulbIndex -= 1;
             bulbCounter -= 1;
@@ -88,4 +91,5 @@ function resetAll(){
     bulbCounter = 12;
     bulbInit();
     bulbDisplayInit();
+    infoDisplay();
 }
