@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<title>Chinese Zodiac | SDWI</title>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-10">
+			<div class="row">
+				<div class="col"><img class="zodiacimg" id="zodiac0" src="img/0.png" onclick="zodiacClick(id)"></div>
+				<div class="col"><img class="zodiacimg" id="zodiac1" src="img/1.png" onclick="zodiacClick(id)"></div>
+				<div class="col"><img class="zodiacimg" id="zodiac2" src="img/2.png" onclick="zodiacClick(id)"></div>
+				<div class="col"><img class="zodiacimg" id="zodiac3" src="img/3.png" onclick="zodiacClick(id)"></div>
+				<div class="col"><img class="zodiacimg" id="zodiac4" src="img/4.png" onclick="zodiacClick(id)"></div>
+				<div class="col"><img class="zodiacimg" id="zodiac5" src="img/5.png" onclick="zodiacClick(id)"></div>
+				<div class="w-100"></div>
+				<div class="col"><img class="zodiacimg" id="zodiac6" src="img/6.png" onclick="zodiacClick(id)"></div>
+				<div class="col"><img class="zodiacimg" id="zodiac7" src="img/7.png" onclick="zodiacClick(id)"></div>
+				<div class="col"><img class="zodiacimg" id="zodiac8" src="img/8.png" onclick="zodiacClick(id)"></div>
+				<div class="col"><img class="zodiacimg" id="zodiac9" src="img/9.png" onclick="zodiacClick(id)"></div>
+				<div class="col"><img class="zodiacimg" id="zodiac10" src="img/10.png" onclick="zodiacClick(id)"></div>
+				<div class="col"><img class="zodiacimg" id="zodiac11" src="img/11.png" onclick="zodiacClick(id)"></div>
+			</div>
+		</div>
+		<div class="col-2">
+			<div class="col">
+				<img class="zodiacimg" id="display" src="img/original.png" onclick="">
+			</div>
+			<div class="w-100"></div>
+			<div class="col">
+				<select multiple="multiple" size="10" id="multiple" class="form-control">
+					<option value="0"></option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<input type="text" id="submitZodiac"><input type="submit" onclick="zodiacSubmit()">
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
