@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Book shop</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript">
+      var sum = 0;//total price amount
+      var booknum = 0;//total books you selected
+        function allowDrop(ev){
+            ev.preventDefault();
+            document.getElementById("cartbox").className = 'alert alert-success container';
+        }
+        function drag(ev){
+            ev.dataTransfer.setData("Text",ev.target.id);
+        }
+        function drop(ev){
+            ev.preventDefault();
+            var data=ev.dataTransfer.getData("Text");
+            ev.target.appendChild(document.getElementById(data));
+            document.getElementById("cartbox").className = 'alert alert-info container';
+            document.getElementById(data).className = 'cart';
+            var price = document.getElementById(data).alt;
+            sum += parseInt(price);
+            document.getElementById('prices').innerHTML = "Total Price: $" + sum;
+            booknum += 1;
+        }
+    </script>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse bg-inverse">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand">SDWI BOOKSHOP</a>
+      </div>
+    </div>
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">SDWI Bookshop</h1>
+        <p class="lead text-muted">Drag the books you want to the shopping cart.</p>
+        <p>
+          <span href="#" class="btn btn-success">Support Alipay &amp; WeChat Pay</span>
+        </p>
+      </div>
+    </section>
+    <div class="album text-muted">
+      <div class="container">
+        <div class="row">
+          <div class="card">
+            <img src="img/1.jpg" id="book1" draggable="true" alt="100" class="bookimg" ondragstart="drag(event)">
+            <p class="card-text">Exit West: A Novel</p>
+            <p class="card-text"><small class="text-muted">by Mohsin Hamid</small></p>
+            <div class="alert alert-success" role="alert">
+              $ <strong>100</strong>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/2.jpg" id="book2" draggable="true" alt="80" class="bookimg" ondragstart="drag(event)">
+            <p class="card-text">One of the Boys: A Novel</p>
+            <p class="card-text"><small class="text-muted">by Daniel Magariel</small></p>
+            <div class="alert alert-success" role="alert">
+              $ <strong>80</strong>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/3.jpg" id="book3" draggable="true" alt="75" class="bookimg" ondragstart="drag(event)">
+            <p class="card-text">White Tears: A novel</p>
+            <p class="card-text"><small class="text-muted">by Hari Kunzru</small></p>
+            <div class="alert alert-success" role="alert">
+              $ <strong>75</strong>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card">
+            <img src="img/4.jpg" id="book4" draggable="true" alt="45" class="bookimg" ondragstart="drag(event)">
+            <p class="card-text">The Night Ocean</p>
+            <p class="card-text"><small class="text-muted">by Paul La Farge</small></p>
+            <div class="alert alert-success" role="alert">
+              $ <strong>45</strong>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/5.jpg" id="book5" draggable="true" alt="108" class="bookimg" ondragstart="drag(event)">
+            <p class="card-text">Irresistible: The Rise of Addictive Technology and the Business of Keeping Us Hooked</p>
+            <p class="card-text"><small class="text-muted">by Adam Alter</small></p>
+            <div class="alert alert-success" role="alert">
+              $ <strong>108</strong>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/6.jpg" id="book6" draggable="true" alt="68" class="bookimg" ondragstart="drag(event)">
+            <p class="card-text">Learn Better: Mastering the Skills for Success in Life, Business, and School, or, How to Become an Expert in Just About Anything</p>
+            <p class="card-text"><small class="text-muted">by Ulrich Boser</small></p>
+            <div class="alert alert-success" role="alert">
+              $ <strong>68</strong>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="card">
+            <img src="img/7.jpg" id="book7" draggable="true" alt="88" class="bookimg" ondragstart="drag(event)">
+            <p class="card-text">All Grown Up</p>
+            <p class="card-text"><small class="text-muted">by Jami Attenberg</small></p>
+            <div class="alert alert-success" role="alert">
+              $ <strong>88</strong>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/8.jpg" id="book8" draggable="true" alt="35" class="bookimg" ondragstart="drag(event)">
+            <p class="card-text">Word by Word: The Secret Life of Dictionaries</p>
+            <p class="card-text"><small class="text-muted">by Kory Stamper</small></p>
+            <div class="alert alert-success" role="alert">
+              $ <strong>35</strong>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/9.jpg" id="book9" draggable="true" alt="78" class="bookimg" ondragstart="drag(event)">
+            <p class="card-text">The Wanderers</p>
+            <p class="card-text"><small class="text-muted">by Meg Howrey</small></p>
+            <div class="alert alert-success" role="alert">
+              $ <strong>78</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<br><br><br><br><br><br><br>
+    <footer class="footer">
+      <div class="alert alert-info container" id="cartbox" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="img/cart.svg" class="svg"><span class="text-muted">Shopping Cart</span><span class="text-muted selectedbook">&nbsp;&nbsp;&nbsp;&nbsp;Selected book(s):</span>
+      </div>
+      <p class="container text-muted" id="prices">Total Price:</p>
+    </footer>
+  </body>
+</html>
