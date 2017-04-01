@@ -13,7 +13,7 @@ Software Development Workshop I
 5. [Homework VIII-1](https://ecwu.github.io/SDWI/homework/8/html5_1/index.html)
 `Finished`
 6. [Homework VIII-2](https://ecwu.github.io/SDWI/homework/8/html5_2/)
-`Working on`
+`Finished`
 
 ## Exercise Quicklink
 1. [Exercise I](https://ecwu.github.io/SDWI/exercise/1/index.html)
