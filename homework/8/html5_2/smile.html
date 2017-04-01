@@ -49,7 +49,8 @@ function drawSmileyFace() {
    drawRightEye();
    drawNose();
    drawSmile();
-   drawHairDown()
+   drawHairDown();
+   drawEars();
 }
 
 function drawFace() {
@@ -169,6 +170,27 @@ function drawSmile() {
    context.stroke();
 }
 
+function drawEars() {
+    context.beginPath();
+    context.arc(100,   // x   x,y is at the center
+        300,   // y
+        50,      // arc radius
+        1.4,         // starting angle
+        4.8);        // counter-clockwise
+    context.fillStyle = "red";
+    context.fill();
+    context.closePath();
+    context.beginPath();
+    context.arc(490,   // x   x,y is at the center
+        300,   // y
+        50,      // arc radius
+        1.4,         // starting angle
+        4.9,true);        // counter-clockwise
+    context.fillStyle = "red";
+    context.fill();
+    context.stroke();
+}
+
 function getMousePos(canvas, evt) {
    var rect = canvas.getBoundingClientRect();
    return {
@@ -221,6 +243,7 @@ canvas.addEventListener('mousemove', function(evt) {
    drawNose();
    drawSmile();
    drawHairDown();
+    drawEars();
 }, false);
 
 canvas.addEventListener('mousedown', function(evt){
@@ -229,6 +252,7 @@ canvas.addEventListener('mousedown', function(evt){
    drawLeftEye();
    drawRightEye();
    drawNose();
+    drawEars();
    drawHairUp();
    context.strokeStyle = 'red';
    context.fillStyle = "red";
