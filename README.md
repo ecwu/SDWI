@@ -14,6 +14,8 @@ Software Development Workshop I
 `Finished`
 6. [Homework VIII-2](https://ecwu.github.io/SDWI/homework/8/html5_2/)
 `Finished`
+7. [Homework IX](https://ecwu.github.io/SDWI/homework/9/myhome.html)
+`Finished`
 
 ## Exercise Quicklink
 1. [Exercise I](https://ecwu.github.io/SDWI/exercise/1/index.html)

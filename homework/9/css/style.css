@@ -1,0 +1,197 @@
+/*global style*/
+body {
+	font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;/*Some Sans-Serif fonts for display */
+	font-size: 1em;
+	line-height: 1.5;/*set text line height to 1.5 times as normal*/
+	background-color: #ffffff;/*White Background color*/
+	margin:0px;/*remove auto margin*/
+}
+a.links:link{
+	color: #4285F4;/*Blue*/
+	text-decoration:none;
+}
+a.links:hover{
+	text-decoration:underline;
+}
+a.links:visited{
+	color:#7B0099;/*Purple*/
+	text-decoration:none;
+}/*anchor visited style*/
+.container {
+	position: relative;
+	padding-right: 20%;
+	padding-left: 20%;/*normal padding is 20% of the website window(screen width more than 700px)*/
+	margin-bottom: 60px;/*margin height for footer*/
+}
+@media(max-width: 900px){/*change padding if screen width less than 700px*/
+.container{
+padding-right:20px;
+padding-left:20px;
+}
+}
+.headbar{
+	padding: 1em 0em;/*responsive padding (top & bottom)*/
+}
+
+.websitetitle{
+	animation: div_move 1s infinite;
+	transition:  1s ease;
+}
+.websitetitle h1{
+	position: absolute;
+	animation: text_move 5s infinite;
+	transition:  1s ease;
+}
+@keyframes text_move{
+	0% {left:0px;}
+	50% {left:1600px;}
+	100% {left:0px;}
+}
+
+.tips{
+	animation: div_move 1s infinite;
+	transition:  1s ease;
+}
+
+.twocolmain{
+	height:100%; 
+	overflow:hidden;/*adapt Height base on subdiv*/
+}/*col style for main*/
+.mainleftcol{
+	width: 30%;
+	float:left;/*taken element from the normal flow and placed along the left of its div*/
+}
+	.avatar{
+		max-width: 80%;
+		border-radius: 30% 30% 30% 30%;
+	}/*let the avatar display in abnormity circle*/
+	.avatar:hover{
+		animation:avatarrotate 0.5s 1;
+	}
+@keyframes avatarrotate{
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+	.lefttextbox{
+		max-width: 80%;
+	}
+	.graytext{
+		color: #888888;
+	}/*a graytext style 53.3% gray*/
+	.bluetext{
+		color: #146EB4;/*blue*/
+	}/*a blue text color for heading*/
+	.stuid{
+		margin-top: 0px;
+	}
+	.topborder {
+		border-top: 1px #e5e5e5 solid;/*a solid border style*/
+		padding-top: 16px;/*add a padding gap(top) for left col*/
+	}
+	.garamondfont{
+		font-family: "Garamond", "Times new roman", serif;
+	}
+
+.mainrightcol{
+	width: 70%;
+	float:right;/*taken element from the normal flow and placed along the right of its div*/
+}
+
+.mainrightcol:hover{
+	animation: div_move 1s infinite;
+	transition:  1s ease;
+	transform:scale(1.5);
+}
+
+@keyframes div_move{
+	0%   {left:0px;}
+	12.5%  {background-color: red; }
+	25%  {background-color: orange;}
+	37.5%  {background-color: yellow;}
+	50%  {background-color: green;}
+	62.5% {background-color: cyan;}
+	75% {background-color: blue;}
+	87.5% {background-color: purple;}
+	100% {background-color: white;}
+}
+	.undotli{
+		list-style-type:none;
+	}/*delete unorder list decoration dot*/
+	.linkintro{
+		font-family: "times new roman", Serif;
+		font-style: italic;/*gray and italic*/
+	}/*Describe text for favorate website*/
+/*Style for timetable*/
+.timetable{
+	width: 100%;
+	position: relative;
+}
+.timetabletd{
+	width: 230px;
+	height: 60px;
+}
+.timetableplace{
+	border: 1px solid;
+	padding: 0px 3px 1px 3px;/*place box*/
+	border-radius: 5px;/*a 5px rounded rectangle*/
+	color: #000000;
+	border-color: #FF9900;/*Orange*/
+}/*1px green border for Timetable time*/
+.timetable_title{
+	background-color: #3B5998;
+	color: #FFFFFF;
+	height: 30px;
+}/*extra no inner line style for title*/
+.outtimetable{
+	border-right: 1px solid #595959;
+	border-bottom: 1px solid #595959;
+}/*border right and bottom side for timetable*/
+.intimetable{
+	border-left: 1px solid #595959;
+	border-top: 1px solid #595959;
+}/*border left and top side for timetable*/
+.timetable_bright{
+	background-color: #F7F7F7;
+}
+.timetable_dark{
+	background-color: #DFE3EE;
+}
+.footerbar {/*footer style*/
+	padding-right: 20%;
+	padding-left: 20%;/*normal padding is 20% of the website window(screen width more than 700px)*/
+	position: relative;/*stick it to the bottom*/
+	max-width: 100%;
+	height: 60px;
+	line-height: 60px;/*align text*/
+	background-color: #e5e5e5;
+}
+	#clp{
+		float: right;
+		display:inline;
+		font-family: "Garamond", "Times new roman", serif;
+	}
+.hirelink{
+	display: block;
+	padding: 15px 20px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	background-image: -webkit-linear-gradient(left,#3494e6,#ec6ead);
+	background-image: -o-linear-gradient(top,#3494e6 0,#ec6ead 100%);
+}
+.hirelink:hover{
+	animation: div_move 5s 1;
+}
+
+.navlinks{
+	color: #fff;
+	padding: 15px 20px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.navlinks:hover{
+	color: #ff9900;
+	padding: 15px 20px;
+	font-weight: 700;
+}
