@@ -1,0 +1,14 @@
+body{
+    margin:10px;
+}
+.logo{
+    height:44px;
+}
+.inlineTitle{
+    display: inline;
+    height: 44px;
+}
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

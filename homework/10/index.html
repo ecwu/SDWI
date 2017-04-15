@@ -1,0 +1,93 @@
+<html><!--Lang Set-->
+<head>
+    <meta charset="UTF-8"><!--encoder Setting-->
+    <title>UNIX Register | SDWI</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"><!--Bootstrap V4.0 A6-->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <p class="h1 inlineTitle"><img src="img/Tux.png" class="logo">  UNIX Register</p><!--Title-->
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-primary card-inverse">
+                    <div class="card-block">
+                        <h3 class="card-title">UNIX Account</h3>
+                        <p class="card-text">Create a new UNIX account to get access to UNIX Git System.</p><!--Highlighting Text-->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-block">
+                        <h3 class="card-title">UNIX Global Fan-Site</h3>
+                        <p class="card-text">Get access to a global UNIX User community.</p>
+                    </div>
+                </div>
+                <div id="reminder" style="font-size: 30px; color: #FF0000;"><!--Place to place the notice text-->
+
+                </div>
+            </div>
+            <div class="col-md-8">
+                <form>
+                    <div class="form-group">
+                        <label for="emailInput">Email Account</label>
+                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" onchange="emailVerification(id);" onblur="emailVerification(id)"><!--Input bar for email-->
+                        <small id="emailHelp" class="form-text text-muted">Please enter your Email.</small><!--help text-->
+                    </div>
+                    <div class="form-group">
+                        <label for="nicknameInput">Nickname</label>
+                        <input type="email" class="form-control" id="nicknameInput" aria-describedby="emailHelp" placeholder="Enter name" onchange="nicknameVerification(id);" onblur="nicknameVerification(id);"><!--Input bar for Nickname-->
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordInput">Password</label>
+                        <input type="password" class="form-control" id="passwordInput" placeholder="Password" onchange="passwordVerification(id);" onblur="passwordVerification(id)"><!--Input bar for password-->
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordConfirm">Confirm Password</label>
+                        <input type="password" class="form-control" id="passwordConfirm" placeholder="Confirm Password" onchange="passwordCheck(id)" onblur="passwordCheck(id)"><!--Input bar for confirm password-->
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                         <div class="row">
+                            <div class="form-check col-2">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked><!--male select radio-->
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check col-2">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2"><!--female select radio-->
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="example-month-input" class="col-form-label">Birthday</label>
+                        <div>
+                            <input class="form-control" type="date" value="2017-01-01" id="example-month-input"><!--Input bar for Date(HTML5)-->
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordConfirm">Verification Code</label>
+                        <div class="input-group input-group-lg">
+                            <input type="text" class="form-control" id="verificationCode"  placeholder="Verification Code" aria-describedby="sizing-addon1" onchange="codeVerification(id)"><!--A Sample Verification Code-->
+                            <span class="input-group-addon" id="sizing-addon1"><img src="img/vc.png"> </span>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" id="check"><!--CheckBox For SA&PP-->
+                            I have read and agreed to the Service Agreement and the Privacy Policy
+                        </label>
+                    </div>
+                </form>
+                    <button type="submit" class="btn btn-primary" onclick="finalCheck()">Submit</button><!--Submit btn-->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script><!-- js script -->
+</html>
