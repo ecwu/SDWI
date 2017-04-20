@@ -1,0 +1,30 @@
+.container{
+    margin:1em 32% 1em 32%;/*a left and right 34% margin(top and button 1em)*/
+}
+.inputText{
+     display: inline-block;/*inline block display for input box*/
+     width: 200px;/*set input box length(width) to 200px*/
+}
+.inputAlert{
+    display: inline-block;/*inline block display for alert*/
+    width: 200px;/*set alert area length(width) to 200px*/
+    color: #ff4251;/*a red alert text*/
+}
+.AdultsDataBox{
+    width: 30px;/*adult value display box width*/
+}
+.HobbiesBox{
+    margin:15px;/*margin for the hobbies selector*/
+}
+.inputBox{
+    margin-top:20px;/*margin between different input box*/
+}
+.submitBtn{
+    float: right;/*submit btn float right*/
+    font-size: 25px;/*larger Font size*/
+}
+.formBox{
+    margin-top: 50px;/*a top margin for the box*/
+    border: #000000 2px solid;/*a box border for the formbox*/
+    padding: 10px 30px 60px 30px;/*padding for four direction*/
+}
