@@ -29,4 +29,4 @@ Software Development Workshop I
 2. [Test 2](https://ecwu.github.io/SDWI/test/2/main.html)
 `Finished`
 3. [Test 3](https://ecwu.github.io/SDWI/test/3)
-`RTG`
+`Finished`
