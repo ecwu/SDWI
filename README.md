@@ -23,6 +23,10 @@ Software Development Workshop I
 1. [Exercise I](https://ecwu.github.io/SDWI/exercise/1/index.html)
 `Finished`
 
-## ## Test Quicklink
+## Test Quicklink
 1. [Test 1](https://ecwu.github.io/SDWI/test/1/index.html)
 `Finished`
+2. [Test 2](https://ecwu.github.io/SDWI/test/2/main.html)
+`Finished`
+3. [Test 3](https://ecwu.github.io/SDWI/test/3)
+`RTG`
