@@ -65,9 +65,22 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="example-month-input" class="col-form-label">Birthday</label>
-                        <div>
-                            <input class="form-control" type="date" value="2017-01-01" id="example-month-input"><!--Input bar for Date(HTML5)-->
+                        <label class="col-form-label">Birthday</label>
+                        <div class="row">
+                            <div class="col"><!-- inline date -->
+                                <select name="year" id="year" class="form-control" required onchange="getyearmon(this,true);generateday(thismonth,thisyear)">
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select name="month" id="month" class="form-control" required onchange="getyearmon(this,false);generateday(thismonth,thisyear)">
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select name="day" id="day" class="form-control" required>
+                                    <option value=''>DD</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group">
@@ -90,4 +103,10 @@
     </div>
 </body>
 <script src="js/script.js"></script><!-- js script -->
+<script src="js/jquery-3.2.0.min.js"></script><!--JQuery 3.2.0-->
+<script>
+    generateyear();//used to generateyears
+    generatemonth();
+</script>
+
 </html>
