@@ -101,7 +101,6 @@ function SelectedChildren(){//check how many children the user select
     }else{
         return result; //return the info for display
     }
-
 }
 function SelectedHobbit(){//check how many hobbit a user selected
     var a = document.getElementById('HobbitA');
@@ -129,4 +128,13 @@ function SubmitInfoBox(){//submit function with alert
     + "You have " + document.getElementById('AdultsNumber').value + " and" + SelectedChildren() + " Children in your family. \n"
     + "Your hobbies are: " + SelectedHobbit();
     alert(info);//alert the info
+}
+function FillInfoBox(){//submit function with alert
+    document.getElementById('oid').value = document.getElementById('inputId').value;
+    document.getElementById('oname').value = document.getElementById('inputName').value;
+    document.getElementById('oaddress').value = document.getElementById('inputAddress').value;
+    document.getElementById('ocellphone').value = document.getElementById('inputCellphone').value;
+    document.getElementById('oadult').value = document.getElementById('AdultsNumber').value;
+    document.getElementById('ochild').value = SelectedChildren();
+    document.getElementById('ohobby').value = SelectedHobbit();
 }

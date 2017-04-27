@@ -9,7 +9,7 @@
 <div class="container">
     <div class="formBox">
     <h1>Information Submit System</h1><!--Title for the website-->
-        <form><!--form tag(start of the form)-->
+        <form method="get" action="form.php"><!--form tag(start of the form)-->
             <div class="inputBox"><!--id input box-->
                 <span class="inputText">ID:</span>
                 <input type="text" placeholder="ID" id="inputId" onblur="IDChecker(id)">
@@ -70,8 +70,17 @@
                     </div>
                 </fieldset>
             </div>
+            <div style="display: none"><!--for datapass--><!--not displayed-->
+                <input type="text" name="iid" id="oid">
+                <input type="text" name="iname" id="oname">
+                <input type="text" name="iaddress" id="oaddress">
+                <input type="text" name="icellphone" id="ocellphone">
+                <input type="text" name="iadult" id="oadult">
+                <input type="text" name="ichild" id="ochild">
+                <input type="text" name="ihobby" id="ohobby">
+            </div>
             <div class="inputBox">
-                <input type="submit" onclick="SubmitInfoBox()" class="submitBtn"><!--right float submit btn-->
+                <input type="submit" onclick="FillInfoBox()" class="submitBtn"><!--right float submit btn-->
             </div>
         </form><!--end of form-->
     </div><!--end of formBox-->
